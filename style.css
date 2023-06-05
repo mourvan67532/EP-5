@@ -1,1 +1,34 @@
-
+body{
+    display: grid;
+    grid-template-areas: 
+    "head head head"
+    "asid main main"
+    "foot foot foot";
+    background-color: #303030;
+    margin: 0;
+    padding: 0;
+}
+.grid_h{
+    grid-area: head;
+    background-color: aqua;
+}
+.grid_a{
+    grid-area: asid;
+    background-color: azure;
+}
+.grid_m{
+    grid-area: main;
+    background-color: red;
+}
+.grid_f{
+    grid-area: foot;
+    background-color: blue;
+}
+/* ----------------------------Header--------------------------------- */
+.ninja{
+    display: flex;
+    justify-c
+}
+.ninja img{
+    width: 5rem;
+}
