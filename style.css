@@ -1,3 +1,4 @@
+/* #303030, #0C2D48, #2E8BC0, #B1D4E0*/
 body{
     display: grid;
     grid-template-areas: 
@@ -7,10 +8,11 @@ body{
     background-color: #303030;
     margin: 0;
     padding: 0;
+    color: #B1D4E0;
 }
 .grid_h{
     grid-area: head;
-    background-color: aqua;
+    background-color: #0C2D48;
 }
 .grid_a{
     grid-area: asid;
@@ -18,7 +20,7 @@ body{
 }
 .grid_m{
     grid-area: main;
-    background-color: red;
+    background-color: #2E8BC0;
 }
 .grid_f{
     grid-area: foot;
