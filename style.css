@@ -27,10 +27,25 @@ body{
     background-color: blue;
 }
 /* ----------------------------Header--------------------------------- */
-.ninja{
+.galaxy{
     display: flex;
-    justify-c
+    align-items: center;
 }
-.ninja img{
+.galaxy h1{
+    padding-left: 10px;
+    font-family: 'Carter One', cursive;
+    text-shadow: 
+    -1px -1px 0px #2E8BC0, 
+    -1px 1px 0px #2E8BC0,      
+     1px -1px 0px #2E8BC0,    
+     1px 0px 0px #2E8BC0;
+}
+.galaxy a{
+    text-decoration: none;
+}
+.galaxy img{
     width: 5rem;
+}
+header nav{
+    display: inline-flex;
 }
