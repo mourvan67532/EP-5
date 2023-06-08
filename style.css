@@ -1,10 +1,11 @@
-/* #303030, #0C2D48, #2E8BC0, #B1D4E0*/
+/* #303030, #0C2D48, #2E8BC0, #B1D4E0, #0433653*/
 body{
     display: grid;
     grid-template-areas: 
-    "head head head"
-    "asid main main"
-    "foot foot foot";
+    "head head "
+    "asid main "
+    "foot foot ";
+    grid-template-columns: 1fr 3fr;
     background-color: #303030;
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@ body{
 }
 .grid_h{
     grid-area: head;
-    background-color: #0C2D48;
+    background-color: #043653;
 }
 .grid_a{
     grid-area: asid;
@@ -20,18 +21,18 @@ body{
 }
 .grid_m{
     grid-area: main;
-    background-color: #2E8BC0;
+    background-color: #0C2D48;
 }
 .grid_f{
     grid-area: foot;
     background-color: blue;
 }
 /* ----------------------------Header--------------------------------- */
-.galaxy{
+.ninja{
     display: flex;
     align-items: center;
 }
-.galaxy h1{
+.ninja h1{
     padding-left: 10px;
     font-family: 'Carter One', cursive;
     text-shadow: 
@@ -40,12 +41,50 @@ body{
      1px -1px 0px #2E8BC0,    
      1px 0px 0px #2E8BC0;
 }
-.galaxy a{
+.ninja a{
     text-decoration: none;
 }
-.galaxy img{
+.ninja img{
     width: 5rem;
 }
-header nav{
+header{
+    display: flex;
+    align-items: center;
+}
+header li {
+    display: inline;
+}
+/* ----------------------------Main--------------------------------- */
+main {
+    padding: 2rem;
+}
+.produtos img{
+    width: 13rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+.produtos{
     display: inline-flex;
+    flex-wrap: wrap;
+    margin: 0;
+    gap: 9px;
+}
+.itens{
+    border: 5px solid black;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: #2E8BC0;
+    padding: 5px;
+}
+.itens h2, p{
+    margin: 0;
+}
+.produtos a{
+    text-decoration: none;
+    color: black;
+}
+@media (max-width: 800px) {
+    .produtos img{
+        width: 30rem;
+    }
 }
