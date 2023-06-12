@@ -50,16 +50,31 @@ body{
 header{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 header li {
     display: inline;
+}
+.carrinho{
+    width: 4rem;
+}
+.usuario{
+    display: flex;
+    align-items: center;
+    
+}
+.avatar{
+    width: 4rem;
+    height: auto;
+    padding-left: 15px;
+    padding-right: 5px;
 }
 /* ----------------------------Main--------------------------------- */
 main {
     padding: 2rem;
 }
 .produtos img{
-    width: 13rem;
+    width: 16rem;
     border-radius: 1rem;
     border: 2px solid black;
 }
@@ -83,8 +98,18 @@ main {
     text-decoration: none;
     color: black;
 }
-@media (max-width: 800px) {
+@media only screen and (max-width: 845px) {
     .produtos img{
-        width: 30rem;
+        width: 90%;
+    }
+    aside{
+        display: none;
+    }
+    body{
+        grid-template-areas: 
+        "head head "
+        "main main "
+        "foot foot ";
+        
     }
 }
