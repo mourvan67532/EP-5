@@ -20,11 +20,10 @@ body{
 }
 .grid_m{
     grid-area: main;
-    background-color: #0C2D48;
+    background-color: #0c2d48;
 }
 .grid_f{
     grid-area: foot;
-    background-color: blue;
 }
 /* ----------------------------Header--------------------------------- */
 .play{
@@ -35,11 +34,7 @@ body{
 .play h1{
     padding-left: 10px;
     font-family: 'Carter One', cursive;
-    text-shadow: 
-    -1px -1px 0px #2E8BC0, 
-    -1px 1px 0px #2E8BC0,      
-     1px -1px 0px #2E8BC0,    
-     1px 0px 0px #2E8BC0;
+    color: #2E8BC0;
 }
 .play a{
     text-decoration: none;
@@ -92,7 +87,7 @@ main {
     height: 30rem;
     height: auto;
     border-radius: 1rem;
-    display: block;http://127.0.0.1:5500/
+    display: block;
     margin: auto;
 }
 .produtos{
@@ -108,6 +103,7 @@ main {
     padding: 5px;
     width: 16rem;
     height: 26rem;
+    box-shadow: 4px 4px 4px  #2E8BC0;
 }
 .itens h4{
     padding-left: 0.4rem;
@@ -115,6 +111,10 @@ main {
 .itens h2, p{
     margin: 0;
 }
+.itens:hover{
+    border: 5px solid #B1D4E0 ;
+}
+
 .produtos a{
     text-decoration: none;
     color: black;
@@ -175,4 +175,8 @@ main {
 }
 .lado h2:hover{
     background-color: #2E8BC0;
+}
+/* ----------------------------Footer--------------------------------- */
+footer{
+    background-color: #043653;
 }
