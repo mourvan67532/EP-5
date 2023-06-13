@@ -27,12 +27,12 @@ body{
     background-color: blue;
 }
 /* ----------------------------Header--------------------------------- */
-.ninja{
+.play{
     display: flex;
     align-items: center;
-    padding-left: 4rem;
+    padding-left: 5rem;
 }
-.ninja h1{
+.play h1{
     padding-left: 10px;
     font-family: 'Carter One', cursive;
     text-shadow: 
@@ -41,10 +41,10 @@ body{
      1px -1px 0px #2E8BC0,    
      1px 0px 0px #2E8BC0;
 }
-.ninja a{
+.play a{
     text-decoration: none;
 }
-.ninja img{
+.play img{
     width: 5rem;
 }
 header{
@@ -62,7 +62,7 @@ header li {
 .usuario{
     display: flex;
     align-items: center;
-    padding-right: 4rem;
+    padding-right: 5rem;
 }
 .avatar_a{
     display: inline-flex;
@@ -83,6 +83,10 @@ main {
     padding: 2rem;
     box-shadow: 4px 4px 4px 4px #2E8BC0;
 }
+.games{
+    width: 80rem;
+    height: 30rem;
+}
 .produtos img{
     width: 15rem;
     height: 30rem;
@@ -101,7 +105,6 @@ main {
     border: 5px solid black;
     border-radius: 1rem;
     color: white;
-    padding: 5px;
     padding: 5px;
     width: 16rem;
     height: 26rem;
@@ -123,10 +126,11 @@ main {
     -1px 1px 0px black,      
      1px -1px 0px black,    
      1px 0px 0px black;
+     padding-left: 9px;
 }
-@media only screen and (max-width: 840px) {
-    .produtos img{
-        width: 90%;
+@media (max-width: 840px) {
+    .itens{
+        width: 30rem;
     }
     aside{
         display: none;
@@ -138,38 +142,29 @@ main {
         "foot foot ";
         
     }
-    .nija{
-        padding: 0.2rem;
-    }
     .usuario{
         display: none;
     }
     
 }
 /* ----------------------------Aside--------------------------------- */
-.filtro{
+.lado{
     text-align: center;
-    padding-top: 2rem;
+    margin: 0rem 3rem 0rem 3rem;
 }
-.lado ul{
-    display: flex;
-    flex-direction: column;
+.lado h2{
+    padding: 1rem;
+    border: 1px solid black;
 }
-.categoria{
-    display: inline-flex;
-    align-items: center;
-    border: 2px solid black;
-    border-radius: 4rem;
-    padding-left: 1.5rem;
-    margin: 0rem 3rem 1rem 1rem;
-    padding-right: 10rem;
+.lado a{
+    color: #B1D4E0;
+    text-decoration: none;
 }
-.categoria h2{
-    padding-left: 1rem;
-}
-.cateimg{
-    width: 3.4rem;
-    height: auto;
+.lado img{
+    width: 10rem;
     border-radius: 50%;
-
+    margin-top: 5rem;
+}
+.lado h2:hover{
+    background-color: #2E8BC0;
 }
