@@ -1,4 +1,4 @@
-/* #303030, #0C2D48, #2E8BC0, #B1D4E0, #0433653*/
+/* #303030, #0C2D48, #2E8BC0, #B1D4E0, #043365*/
 body{
     display: grid;
     grid-template-areas: 
@@ -81,6 +81,28 @@ main {
 .games{
     width: 80rem;
     height: 30rem;
+    animation: games 13s infinite;
+    background-size: 100%;
+    border-radius: 3rem;
+}
+@keyframes games {
+    0%{
+        background-image: url(imagens/games.jpg);
+    }
+    25%{
+        background-image: url(imagens/games.jpg);
+    }
+    50%{
+        background-image: url(imagens/mudar.png);
+    }
+    75%{
+        background-image: url(imagens/games.jpg);
+    }
+    100%{
+        background-image: url(imagens/games.jpg);
+    }
+
+    
 }
 .produtos img{
     width: 15rem;
@@ -128,9 +150,23 @@ main {
      1px 0px 0px black;
      padding-left: 9px;
 }
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 740px) {
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    .play{
+        padding: 0rem;
+    }
     .produtos img{
         width: 100%;
+    }
+    .produtos{
+        display: flex;
+        justify-content: center;
+    }
+    .destaque{
+        text-align: center;
     }
     .itens{
         height: 27rem;
@@ -142,8 +178,7 @@ main {
         grid-template-areas: 
         "head head "
         "main main "
-        "foot foot ";
-        
+        "foot foot ";  
     }
     .usuario{
         display: none;
