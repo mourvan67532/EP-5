@@ -39,7 +39,7 @@
     color: #2E8BC0;
 }
 .play a{
-    text-decoration: none;
+    text-decoration:  none;
 }
 .play img{
     width: 5rem;
@@ -83,7 +83,7 @@ main {
 .games{
     width: 80rem;
     height: 30rem;
-    animation: games_ani 40s infinite;
+    animation: games_ani 20s infinite;
     background-size: 100%;
     border-radius: 3rem;
     border: 3px solid #B1D4E0;
@@ -294,7 +294,7 @@ footer{
     color: #B1D4E0;
 }
 #compre{
-    border: 2px solid black ;
+    border: 2px solid #B1D4E0 ;
     border-radius: 1rem;
     padding: 1.5rem;
     background-color: rgb(0, 116, 228);
@@ -311,4 +311,34 @@ footer{
     display: block;
     margin: auto;
     border-radius: 1rem;
+}
+@media (max-width: 1100px){
+    .texto iframe{
+        width: 100%;
+    }
+    
+}
+@media (max-width: 800px){
+    .produto_pg{
+        margin: 0;
+    }
+    .produto_img{
+        width: 70%;
+        display: block;
+        margin: auto;
+    } 
+    .botao_produto{
+        margin: 0;
+    }
+}
+@media (max-width: 550px){
+    .descricao h2, .descricao h3{
+        display: flex;
+        border: none;
+        flex-direction: column;
+    }
+    .body_produto .genero{
+        border: none;
+        padding: 0;
+    }
 }
