@@ -81,7 +81,7 @@ header li {
 .menu_mobile{
     display: none;
 }
-/* ----------------------------Main--------------------------------- */
+/* ----------------------------Principal--------------------------------- */
 main {
     padding: 2rem;
     box-shadow: 4px 4px 4px  #2E8BC0;
@@ -156,7 +156,65 @@ main {
      1px 0px 0px black;
      padding-left: 9px;
 }
-
+@media (max-width: 1100px){
+    .texto iframe{
+        width: 100%;
+    }
+}
+@media (max-width: 800px) {
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+    .play{
+        padding: 0rem;
+    }
+    .produtos img{
+        width: 100%;
+    }
+    .produtos{
+        display: flex;
+        justify-content: center;
+    }
+    .destaque{
+        text-align: center;
+    }
+    .itens{
+        height: 27rem;
+    }
+    aside{
+        display: none;
+    }
+    .grid_principal{
+        grid-template-areas: 
+        " head head "
+        " main main "
+        " foot foot ";  
+    }
+    .usuario{
+        display: none;
+    }
+    .games{
+        display: none;
+    }
+}
+@media (max-width: 1000px) {
+    .games{
+        display: none;
+    }
+    
+}
+@media (max-width: 900px){
+    aside{
+        display: none;
+    }
+    .grid_principal{
+        grid-template-areas: 
+        " head head "
+        " main main "
+        " foot foot ";  
+    }
+}
 /* ----------------------------Aside--------------------------------- */
 .lado{
     text-align: center;
@@ -309,111 +367,7 @@ footer h3{
     margin: auto;
     border-radius: 1rem;
 }
-/* -------------------------------------cadastro---------------------------------- */
-.body_form{
-    background-color: #0c2d48;
-    grid-template-areas: 
-    "head head"
-    "main main"
-    "foot foot";
-    color: #B1D4E0;
-    font-family: 'Nanum Gothic', sans-serif;
-    margin: 0;
-}
-.form_pg{
-    background-color: #043653;
-    margin: 0% 15% 0% 15%;
-    padding: 1rem;
-    box-shadow: 4px 4px 4px #2E8BC0;
-    border: 1px solid #B1D4E0;
-    border-radius: 3rem;
-}
-#nome, #email, #name_user, #senha, #senha_confirm, #tele, #cpf, #rg, #cartao{
-    padding: 0.3rem;
-    width: 20rem;
-    border-radius: 0.7rem;
-    background-color: #303030;
-    color: #B1D4E0;
-    font-size: 90%;
-}
-.form_pg h1{
-    text-align: center;
-}
-.form form{
-    font-size: 120%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-form label{
-    text-align: center;
-}
-.form{
-    margin-right: 35%;
-    text-align: right;
-}
-.enviar_form button{
-    padding: 0.5rem;
-    background-color: #303030;
-    border: 3px solid #B1D4E0;
-    color: #B1D4E0;
-    border-radius: 0.7rem;
-}
-.main_form{
-    box-shadow: none;
-}
-
-/* -------------------------------responsividade-------------------------------- */
-@media (max-width: 1400px){
-    .form_pg{
-        margin: 0% 23% 0% 23%;
-    }
-    .form{
-        margin-right: 21%;
-    }
-}
-@media (max-width: 1100px){
-    .texto iframe{
-        width: 100%;
-    }
-    
-}
-@media (max-width: 800px) {
-    header{
-        display: flex;
-        justify-content: space-around;
-    }
-    .play{
-        padding: 0rem;
-    }
-    .produtos img{
-        width: 100%;
-    }
-    .produtos{
-        display: flex;
-        justify-content: center;
-    }
-    .destaque{
-        text-align: center;
-    }
-    .itens{
-        height: 27rem;
-    }
-    aside{
-        display: none;
-    }
-    .grid_principal{
-        grid-template-areas: 
-        " head head "
-        " main main "
-        " foot foot ";  
-    }
-    .usuario{
-        display: none;
-    }
-    .games{
-        display: none;
-    }
+@media (max-width: 800px){
     .produto_pg{
         margin: 0;
     }
@@ -427,23 +381,6 @@ form label{
     }
     .menu_mobile{
         display: flex;
-    }
-}
-@media (max-width: 1000px) {
-    .games{
-        display: none;
-    }
-    
-}
-@media (max-width: 900px){
-    aside{
-        display: none;
-    }
-    .grid_principal{
-        grid-template-areas: 
-        " head head "
-        " main main "
-        " foot foot ";  
     }
 }
 @media (max-width: 1500px) {
@@ -469,4 +406,90 @@ form label{
     .produto_img{
         width: 16rem;
     }
+}
+/* -------------------------------------cadastro---------------------------------- */
+.body_form{
+    background-color: #0c2d48;
+    grid-template-areas: 
+    "head head"
+    "main main"
+    "foot foot";
+    color: #B1D4E0;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+.form_pg{
+    background-color: #043653;
+    margin: 0% 15% 0% 15%;
+    padding: 1rem;
+    box-shadow: 4px 4px 4px #2E8BC0;
+    border: 1px solid #B1D4E0;
+    border-radius: 3rem;
+}
+.bloco_form input{
+    padding: 0.5rem;
+    width: 20rem;
+    border-radius: 0.7rem;
+    background-color: #303030;
+    color: #B1D4E0;
+    font-size: 90%;
+    outline: 2px solid #2E8BC0;
+}
+.bloco_form input:hover{
+    background-color: #3b3b3b;
+}
+.form_pg h1{
+    text-align: center;
+}
+.form{
+    font-size: 120%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0 10% 0 10%;
+}
+.enviar_form button{
+    padding: 0.5rem;
+    background-color: #303030;
+    font-size: 100%;
+    border: 3px solid #B1D4E0;
+    color: #B1D4E0;
+    border-radius: 0.7rem;
+    margin-top: 2rem;
+    margin-left: 73%;
+}
+.enviar_form button:hover{
+    cursor: pointer;
+    border: 3px solid #2e8bc0;
+}
+.main_form{
+    box-shadow: none;
+}
+.bloco_form{
+    display: flex;
+    flex-direction: column;
+}
+.form label{
+    margin-bottom: 0.3rem;
+}
+.form_pg img{
+    width: 7rem;
+    display: block;
+    margin: auto;
+}
+@media (max-width: 1400px){
+    .form_pg{
+        margin: 0% 23% 0% 23%;
+    }
+    .form{
+        margin-right: 21%;
+    }
+}
+.vermelho{
+    color: red;
+}
+/* ------------------------------------------mobile-------------------------*/
+.mobile{
+    display: none;
 }
