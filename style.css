@@ -527,6 +527,18 @@ footer h3{
     display: block;
     margin: auto;
 }
+@media (max-width: 900px){
+    .form_pg{
+        box-shadow: none;
+        border: none;
+        background-color: #0c2d48;
+    }
+    .enviar_form button{
+        display: block;
+        margin: auto;
+        margin-top: 2rem;
+    }
+}
 @media (max-width: 1400px){
     .form_pg{
         margin: 0% 23% 0% 23%;
