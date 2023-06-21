@@ -571,3 +571,18 @@ footer h3{
 .vermelho{
     color: red;
 }
+/* --------------------------------------carrinho---------------------------------*/
+.body_car{
+    margin: 0;
+    grid-template-areas: 
+    "head"
+    "cart"
+    "foot";
+}
+.cart{
+    grid-area: cart;
+    background-color: #043653;
+}
+.body_car main{
+    background-color: #0c2d48;
+}
