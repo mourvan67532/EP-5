@@ -97,22 +97,23 @@ header li {
 /* ------------------------------------------header_mobile------------------------------------*/
 .mobile{
     position: absolute;
-    top: 8%;
+    margin-top: -1rem;
     background-color: #043653;
     border-end-end-radius: 2rem;
     border: 5px solid #B1D4E0;
     border-top: none;
     border-left: none;
     padding: 1rem;
-    left: -250px;
+    left: -400px;
     transition: all 1s;
     font-family: 'Quicksand', sans-serif;
+    display: flex;
 }
 #check_mob{
     display: none;
 }
 .menu_mobile input[type="checkbox"]:checked ~ nav{
-    transform: translateX(250px);
+    transform: translateX(400px);
 }
 .carrinho_mob{
     width: 4rem;
