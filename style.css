@@ -586,3 +586,25 @@ footer h3{
 .body_car main{
     background-color: #0c2d48;
 }
+/* ------------------------------------Aside Mobile---------------------------- */
+.aside_mob select{
+    background-color: #303030;
+    text-align: center;
+    font-size: 150%;
+    color: #B1D4E0;
+    display: none;
+    margin: auto;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 4px  #2E8BC0;
+}
+.aside_mob option{
+    font-size: 120%;
+    color: #B1D4E0;
+}
+@media (max-width: 900px) {
+    .aside_mob select{
+        display: block;
+    }
+    
+}
