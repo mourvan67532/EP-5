@@ -586,6 +586,9 @@ footer h3{
 .body_car main{
     background-color: #0c2d48;
 }
+.body_car aside{
+    gri
+}
 /* ------------------------------------Aside Mobile---------------------------- */
 .aside_mob select{
     background-color: #303030;
@@ -606,5 +609,4 @@ footer h3{
     .aside_mob select{
         display: block;
     }
-    
 }
