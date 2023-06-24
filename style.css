@@ -574,24 +574,102 @@ footer h3{
 /* --------------------------------------carrinho---------------------------------*/
 .body_car{
     margin: 0;
+    display: grid;
     grid-template-areas: 
-    "head"
+    "cabe"
     "cart"
-    "foot";
+    "roda";
+    font-family: 'Quicksand', sans-serif;
 }
-.cart{
-    grid-area: cart;
+.carri{
     background-color: #043653;
+    margin: 0% 15% 0% 15%;
+    padding: 1rem;
+    border-radius: 5rem;
+    box-shadow: 4px 4px 4px #2E8BC0;
+    border: 1px solid #B1D4E0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.lixo img{
+    width: 10px;
+    height: 1rem;
+}
+.finalizar{
+    background-color: #303030;
+    width: 24rem;
+    margin-right: 2rem;
+    border-radius: 5rem;
+    padding: 1rem;
+    border: 1px solid #B1D4E0;
+    box-shadow: 4px 4px 4px #2E8BC0;
+    color: #B1D4E0;
+    text-align: center;
+}
+.finalizar a{
+    text-decoration: none;  
+    color: #B1D4E0;
+}
+.finalizar .finalizar_carri{
+    border: 3px solid #B1D4E0;
+    background-color: #2E8BC0;
+    padding: 1.5rem;
+    border-radius: 2rem;
+}
+.finalizar .cancela_carri{
+    border: 3px solid #B1D4E0;
+    padding: 1.5rem;
+    border-radius: 2rem;
+}
+.finalizar h1{
+    margin-top: 3rem;
+}
+.total{
+    color: #2e8b;
+}
+.produto_compre{
+    border: 1px solid #B1D4E0;
+    border-radius: 2rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    background-color: #0c2d48;
+    color: #B1D4E0;
+    display: flex;
+    gap: 1rem;
+    width: 140%;
+    margin-bottom: 1rem;
+    box-shadow: 4px 4px 4px #2E8BC0;
+}
+.descr_carri input{
+    background-color: #303030;
+    font-size: 90%;
+    color: #B1D4E0;
+    border-radius: 0.7rem;
+    width: 3rem;
+    height: 1rem;
+    padding: 0.4rem;
+    border: #B1D4E0 solid 3px;
+}
+.produto_compre img{
+    width: auto;
+    height: 10rem;
+    border-radius: 1rem;
+}
+.body_car header{
+    grid-area: cabe;
 }
 .body_car main{
+    grid-area: cart;
     background-color: #0c2d48;
 }
-.body_car aside{
-    gri
+.body_car footer{
+    grid-area: roda;
 }
+
 /* ------------------------------------Aside Mobile---------------------------- */
 .aside_mob select{
-    background-color: #303030;
+    background-color: #303030 ;
     text-align: center;
     font-size: 150%;
     color: #B1D4E0;
@@ -605,7 +683,7 @@ footer h3{
     font-size: 120%;
     color: #B1D4E0;
 }
-@media (max-width: 900px) {
+@media (max-width: 900px){
     .aside_mob select{
         display: block;
     }
