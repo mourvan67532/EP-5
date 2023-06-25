@@ -56,6 +56,9 @@ header li {
     width: 4rem;
     filter: invert(100%);
 }
+.carrinho:hover{
+    filter: invert(0%);
+}
 .usuario{
     display: flex;
     align-items: center;
@@ -323,6 +326,9 @@ footer{
     filter: invert(100%);
     width: 2rem;
 }
+.contato .img_ctt:hover{
+    filter: invert(0%);
+}
 .pagamento{
     display: flex;
     justify-content: center;
@@ -404,10 +410,18 @@ footer h3{
     padding: 1.5rem;
     background-color: rgb(0, 116, 228);
 }
+#compre:hover{
+    background-color: rgb(28, 149, 255);
+    border: 2px solid black;
+}
 #carrinho{
     border: 2px solid #B1D4E0;
     padding: 1.5rem;
     border-radius: 1rem;
+}
+#carrinho:hover{
+    background-color: #2e8bc05d;
+    border: 2px solid black;
 }
 .texto{
     margin: 5%;
@@ -592,18 +606,18 @@ footer h3{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.lixo img{
-    width: 10px;
-    height: 1rem;
+.carri section{
+    margin-top: 1.4rem;
+    margin-left: 5rem;
+}
+.carri section h1{
+    color: #B1D4E0;
+    text-align: center;
 }
 .finalizar{
-    background-color: #303030;
     width: 24rem;
-    margin-right: 2rem;
-    border-radius: 5rem;
+    margin-right: 4rem;
     padding: 1rem;
-    border: 1px solid #B1D4E0;
-    box-shadow: 4px 4px 4px #2E8BC0;
     color: #B1D4E0;
     text-align: center;
 }
@@ -613,14 +627,22 @@ footer h3{
 }
 .finalizar .finalizar_carri{
     border: 3px solid #B1D4E0;
-    background-color: #2E8BC0;
+    background-color: rgb(0, 116, 228);
     padding: 1.5rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
+}
+.finalizar .finalizar_carri:hover{
+    background-color: #2E8BC0;
+    border: 3px solid black;
+}
+.finalizar .cancela_carri:hover{
+    background-color: #2e8bc05d;
+    border: 3px solid black;
 }
 .finalizar .cancela_carri{
     border: 3px solid #B1D4E0;
     padding: 1.5rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 .finalizar h1{
     margin-top: 3rem;
@@ -630,16 +652,16 @@ footer h3{
 }
 .produto_compre{
     border: 1px solid #B1D4E0;
-    border-radius: 2rem;
+    border-radius: 1rem;
     margin-left: 1rem;
     padding: 1rem;
     background-color: #0c2d48;
     color: #B1D4E0;
     display: flex;
-    gap: 1rem;
-    width: 140%;
+    justify-content: space-between;
     margin-bottom: 1rem;
     box-shadow: 4px 4px 4px #2E8BC0;
+    cursor: cell;
 }
 .descr_carri input{
     background-color: #303030;
@@ -651,10 +673,14 @@ footer h3{
     padding: 0.4rem;
     border: #B1D4E0 solid 3px;
 }
+.carri_tudo{
+    display: flex;
+    gap: 9px;
+}
 .produto_compre img{
     width: auto;
     height: 10rem;
-    border-radius: 1rem;
+    border-radius: 0.3rem;
 }
 .body_car header{
     grid-area: cabe;
@@ -666,7 +692,50 @@ footer h3{
 .body_car footer{
     grid-area: roda;
 }
+.lixo img{
+    width: auto;
+    height: 3rem;
+    margin-top: 0.4rem;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.lixo img:hover{
+    filter: invert(77%);
+}
+.lixo{
+    display: flex;
+    align-items: end;
+}
+@media (max-width: 800px){
+    .carri section{
+        margin: 0;
+    }
+    .produto_compre{
+        margin-left: 0;
+    }
+    .carri{
+        margin: 0;
+        padding: 0;
+    }
+    .finalizar{
+        margin: 0;
+    }
+}
+@media (max-width: 500px){
+    .carri{
+        background-color: #0c2d48;
+        border: none;
+        margin: 0;
+        box-shadow: none;
+    }
+    .produto_compre{
+        background-color: #043653;
+    }
 
+}
+@media (max-width: 900px){
+
+}
 /* ------------------------------------Aside Mobile---------------------------- */
 .aside_mob select{
     background-color: #303030 ;
