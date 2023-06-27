@@ -712,6 +712,7 @@ footer h3{
     }
     .produto_compre{
         margin-left: 0;
+        display: flex;
     }
     .carri{
         margin: 0;
@@ -719,6 +720,15 @@ footer h3{
     }
     .finalizar{
         margin: 0;
+    }
+    .carri_tudo{
+        display: flex;
+    }
+    .produto_compre img{
+        width: 13rem;
+        height: auto;
+        display: block;
+        margin: auto;
     }
 }
 @media (max-width: 500px){
