@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 </head>
 <body class="body_car">
+    <script src="script.js">
+    </script>
     <header class="grid_h">
         <div class="menu_mobile">
             <input type="checkbox" id="check_mob">
@@ -59,48 +61,56 @@
         <div class="carri">
             <section>
                 <h1>Produtos:</h1>
-                <div class="carri_produto">
-                    <div class="produto_compre">
-                        <div class="carri_tudo">
-                            <img src="imagens/capa_spider.jpeg" alt="capa jogo spider man" class="carri_img">
-                            <div class="descr_carri">
-                                <h3>Spider-man Remastered</h3>
-                                <h3>R$:160,97</h3>
-                                <input type="number"  min="1" max="10" placeholder="01">
+                <div id="lixo_java">
+                    <div class="carri_produto">
+                        <div class="produto_compre">
+                            <div class="carri_tudo">
+                                <img src="imagens/capa_spider.jpeg" alt="capa jogo spider man" class="carri_img">
+                                <div class="descr_carri">
+                                    <h3>Spider-man Remastered</h3>
+                                    <h3>R$:160,97</h3>
+                                    <input type="number"  min="1" max="10" placeholder="01">
+                                </div>
                             </div>
-                        </div>
-                        <div class="lixo">
-                            <img src="imagens/lixo.png" alt="lixeira" title="Remover">
+                            <div class="lixo">
+                                <img src="imagens/lixo.png" alt="lixeira" title="Remover" onclick="lixo()">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="carri_produto">
-                    <div class="produto_compre">
-                        <div class="carri_tudo">
-                            <img src="imagens/fifa 23.jpeg" alt="capa jogo fifa23" class="carri_img">
-                            <div class="descr_carri">
-                                <h3>EA SPORTS™ FIFA 23</h3>
-                                <h3>R$:100,90</h3>
-                                <input type="number"  min="1" max="10" placeholder="01">
+                <!-- Proximo produto -->
+                <div id="lixo_java2">
+                    <div class="carri_produto">
+                        <div class="produto_compre">
+                            <div class="carri_tudo">
+                                <img src="imagens/fifa 23.jpeg" alt="capa jogo fifa23" class="carri_img">
+                                <div class="descr_carri">
+                                    <h3>EA SPORTS™ FIFA 23</h3>
+                                    <h3>R$:100,90</h3>
+                                    <input type="number"  min="1" max="10" placeholder="01">
+                                </div>
                             </div>
-                        </div>
-                        <div class="lixo">
-                            <img src="imagens/lixo.png" alt="lixeira" title="Remover">
+                            <div class="lixo">
+                                <img src="imagens/lixo.png" alt="lixeira" title="Remover"  onclick="lixo2()">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="carri_produto">
-                    <div class="produto_compre">
-                        <div class="carri_tudo">
-                            <img src="imagens/capa_gow.jpeg" alt="capa jogo God of war" class="carri_img">
-                            <div class="descr_carri">
-                                <h3>God of war</h3>
-                                <h3>R$:119,90</h3>
-                                <input type="number"  min="1" max="10" placeholder="01">
+                <!-- Proximo produto -->
+                <div id="lixo_java3">
+                    <div class="carri_produto">
+                        <div class="produto_compre">
+                            <div class="carri_tudo">
+                                <img src="imagens/capa_gow.jpeg" alt="capa jogo God of war" class="carri_img">
+                                <div class="descr_carri">
+                                    <h3>God of war</h3>
+                                    <h3>R$:119,90</h3>
+                                    <input type="number"  min="1" max="10" placeholder="01">
+                                </div>
                             </div>
-                        </div>
-                        <div class="lixo">
-                            <img src="imagens/lixo.png" alt="lixeira" title="Remover">
+                            <div class="lixo">
+                                <img src="imagens/lixo.png" alt="lixeira" title="Remover"  onclick="lixo3()">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -110,8 +120,8 @@
                 <br>
                 <br>
                 <br>
-                <h2 class="total">Total: 381,77</h2>
-                <a href="#">
+                <h2 class="total">Total: R$:381,77</h2>
+                <a href="#" onclick="obrigado()">
                     <h2 class="finalizar_carri">Finalizar Compra</h2>
                 </a>
                 <a href="#">

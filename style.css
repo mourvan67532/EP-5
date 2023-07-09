@@ -662,7 +662,7 @@ footer h3{
     margin-bottom: 1rem;
     box-shadow: 4px 4px 4px #2E8BC0;
     cursor: cell;
-    width: 100%;
+    width: 30rem;
 }
 .descr_carri input{
     background-color: #303030;
@@ -705,6 +705,9 @@ footer h3{
 .lixo{
     display: flex;
     align-items: end;
+}
+#lixo_java, #lixo_java2, #lixo_java3 {
+    display: block;
 }
 @media (max-width: 1500px){
 
