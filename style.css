@@ -7,8 +7,8 @@
     "foot foot ";
     grid-template-columns: 1fr 3fr; /* tamanho da coluna do grid */
     background-color: #303030; /* cor de fundo */
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Margem externa*/
+    padding: 0; /*Margem interna*/
     color: #B1D4E0; /* cor */
 }
 .grid_h{
@@ -24,17 +24,17 @@
 }
 .grid_f{
     grid-area: foot; /* nome do grid do footer */
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Margem externa*/
+    padding: 0; /*Margem interna*/
 }
 /* ----------------------------Header--------------------------------- */
 .play{
     display: flex; /* flex*/
     align-items: center;
-    padding-left: 5rem;
+    padding-left: 5rem; /*Margem interna*/
 }
 .play h1{
-    padding-left: 10px;
+    padding-left: 10px; /*Margem interna*/
     font-family: 'Carter One', cursive; /* fonte */
     color: #2E8BC0; /* cor */
 }
@@ -62,7 +62,7 @@ header li {
 .usuario{
     display: flex;
     align-items: center;
-    padding-right: 5rem;
+    padding-right: 5rem; /*Margem interna*/
     font-family: 'Quicksand', sans-serif; /* fonte*/
 }
 .avatar_a{
@@ -76,8 +76,8 @@ header li {
 .avatar{
     width: 4rem;
     height: auto;
-    padding-left: 15px;
-    padding-right: 5px;
+    padding-left: 15px; /*Margem interna*/
+    padding-right: 5px; /*Margem interna*/
 }
 .menu_mobile img{
     width: 4rem;
@@ -91,7 +91,7 @@ header li {
         justify-content: space-around;
     }
     .play{
-        padding: 0rem;
+        padding: 0rem; /*Margem interna*/
     }
     .menu_mobile{
         display: flex;
@@ -99,14 +99,14 @@ header li {
 }
 /* ------------------------------------------header_mobile------------------------------------*/
 .mobile{
-    position: absolute;
-    margin-top: -1rem;
+    position: absolute; 
+    margin-top: -1rem; /* Margem externa*/
     background-color: #043653;  /* cor de fundo */
-    border-end-end-radius: 2rem;
+    border-end-end-radius: 2rem; /* arredondamento da borda */
     border: 5px solid #B1D4E0;
     border-top: none;
     border-left: none;
-    padding: 1rem;
+    padding: 1rem; /*Margem interna*/
     left: -400px;
     transition: all 1s;
     font-family: 'Quicksand', sans-serif; /* fonte */
@@ -125,14 +125,14 @@ header li {
 .avatar_mob{
     width: 3rem;
     height: auto;
-    margin-right: 0.3rem;
+    margin-right: 0.3rem; /* Margem externa*/
 }
 .mob_cadastro a{
     text-decoration: none;
     color: #B1D4E0; /* cor */
 }
 .mob_cadastro a:hover{
-    text-decoration: underline;
+    text-decoration: underline; 
 }
 .mob_cadastro{
     display: flex;
@@ -144,7 +144,7 @@ header li {
 }
 /* ----------------------------Principal--------------------------------- */
 main {
-    padding: 2rem;
+    padding: 2rem; /*Margem interna*/
     box-shadow: 4px 4px 4px  #2E8BC0;
 }
 .games{
@@ -152,12 +152,12 @@ main {
     height: 30rem;
     animation: games_ani 20s infinite; /* animação */
     background-size: 100%;
-    border-radius: 3rem;
+    border-radius: 1rem; /* arredondamento da borda */
     border: 3px solid #B1D4E0;
 }
 @keyframes games_ani { /* animação de trocar as imagens*/
     0%{
-        background-image: url(imagens/mudar5.jpg);
+        background-image: url(imagens/forza.jpg);
     }
     25%{
         background-image: url(imagens/mudar2.jpg);
@@ -176,31 +176,31 @@ main {
     width: 15rem;
     height: 30rem;
     height: auto;
-    border-radius: 1rem;
+    border-radius: 1rem; /* arredondamento da borda */
     display: block;
-    margin: auto;
+    margin: auto; /* Margem externa*/
 }
 .produtos{
     display: inline-flex;
     flex-wrap: wrap;
-    margin: 0;
+    margin: 0; /* Margem externa*/
     gap: 1rem;
     font-family: 'Quicksand', sans-serif;
 }
 .itens{
     border: 5px solid black;
-    border-radius: 1rem;
+    border-radius: 1rem; /* arredondamento da borda */
     color: white; /* cor */
-    padding: 7px;
+    padding: 7px; /*Margem interna*/
     width: 16rem;
     height: 26rem;
     box-shadow: 4px 4px 4px  #2E8BC0;
 }
 .itens h4{
-    padding-left: 0.4rem;
+    padding-left: 0.4rem; /*Margem interna*/
 }
 .itens h2, p{
-    margin: 0;
+    margin: 0; /* Margem externa*/
 }
 .itens:hover{
     border: 5px solid #B1D4E0 ;
@@ -216,7 +216,7 @@ main {
     -1px 1px 0px black,      
      1px -1px 0px black,    
      1px 0px 0px black;
-     padding-left: 9px;
+     padding-left: 9px; /*Margem interna*/
 }
 @media (max-width: 1100px){
     .texto iframe{
@@ -273,13 +273,13 @@ main {
 /* ----------------------------Aside--------------------------------- */
 .lado{
     text-align: center;
-    margin: 0rem 3rem 0rem 3rem;
+    margin: 0rem 3rem 0rem 3rem; /* Margem externa*/
     font-family: 'Quicksand', sans-serif;
 }
 .lado h2{
-    padding: 1rem;
+    padding: 1rem; /*Margem interna*/
     border: 1px solid black;
-    border-radius: 1rem;
+    border-radius: 1rem; /* arredondamento da borda */
 }
 .lado a{ 
     color: #B1D4E0; /* cor */
@@ -287,8 +287,8 @@ main {
 }
 .lado img{
     width: 10rem;
-    border-radius: 50%;
-    margin-top: 5rem;
+    border-radius: 50%; /* arredondamento da borda */
+    margin-top: 5rem; /* Margem externa*/
 }
 .lado h2:hover{ 
     background-color: #2E8BC0;  /* cor de fundo */
@@ -299,13 +299,13 @@ footer{
     color: #B1D4E0; /* cor */
 }
 .footer{
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; /* Margem externa*/
 }
 .rodape{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0.7rem;
+    padding: 0.7rem; /*Margem interna*/
 }
 .rodape h1{
     font-family: 'Carter One', cursive;
@@ -320,7 +320,7 @@ footer{
     justify-content: center;
     gap: 1rem;
     background-color: #2E8BC0;  /* cor de fundo */
-    padding: 5px;
+    padding: 5px; /*Margem interna*/
 }
 .contato .img_ctt{
     filter: invert(100%); /* inverter cor da imagem */
@@ -339,8 +339,8 @@ footer{
 .pagamento img{
     width: 5rem;
     background-color: #B1D4E0;  /* cor de fundo */
-    border-radius: 5px;
-    padding: 4px;
+    border-radius: 5px; /* arredondamento da borda */
+    padding: 4px; /*Margem interna*/
 }
 footer h3{
     text-align: center;
@@ -353,7 +353,7 @@ footer h3{
     " head "
     " main "
     " foot ";
-    margin: 0;
+    margin: 0; /* Margem externa*/
     font-family: 'Quicksand', sans-serif;
 }
 .pag_produtos{
@@ -363,23 +363,23 @@ footer h3{
 }
 .produto_pg{
     background-color: #043653;  /* cor de fundo */
-    margin: 0% 15% 0% 15%;
-    padding: 1rem;
-    border-radius: 5rem;
+    margin: 0% 15% 0% 15%; /* Margem externa*/
+    padding: 1rem; /*Margem interna*/
+    border-radius: 5rem; /* arredondamento da borda */
     box-shadow: 4px 4px 4px #2E8BC0;
     border: 1px solid #B1D4E0;
 }
 .produto_img{
     width: 25rem;
-    border-radius: 2rem;
-    margin-left: 4%;
+    border-radius: 2rem; /* arredondamento da borda */
+    margin-left: 4%; /* Margem externa*/
 }
 .descricao{
-    margin-left: 2rem;
+    margin-left: 2rem; /* Margem externa*/
     font-family: 'Quicksand', sans-serif;
 }
 .descricao h1, .descricao h2, .descricao h3{
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; /* Margem externa*/
 }
 .descricao h1{
     font-size: 38px;
@@ -387,17 +387,17 @@ footer h3{
 .produto_flex{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 3%;
+    margin-top: 3%; /* Margem externa*/
 }
 .body_produto .genero{
     border: 2px solid #B1D4E0;
-    margin-right: 1rem;
-    border-radius: 5rem;
-    padding: 0.5rem;
+    margin-right: 1rem; /* Margem externa*/
+    border-radius: 5rem; /* arredondamento da borda */
+    padding: 0.5rem; /*Margem interna*/
 }
 .botao_produto{
-    margin-left: 50%;
-    margin-right: 7%;
+    margin-left: 50%; /* Margem externa*/
+    margin-right: 7%; /* Margem externa*/
     text-align: center;
 }
 .botao_produto a{
@@ -406,8 +406,8 @@ footer h3{
 }
 #compre{
     border: 2px solid #B1D4E0 ;
-    border-radius: 1rem;
-    padding: 1.5rem;
+    border-radius: 1rem; /* arredondamento da borda */
+    padding: 1.5rem; /*Margem interna*/
     background-color: rgb(0, 116, 228);  /* cor de fundo */
 }
 #compre:hover{
@@ -416,20 +416,20 @@ footer h3{
 }
 #carrinho{
     border: 2px solid #B1D4E0;
-    padding: 1.5rem;
-    border-radius: 1rem;
+    padding: 1.5rem; /*Margem interna*/
+    border-radius: 1rem; /* arredondamento da borda */
 }
 #carrinho:hover{
     background-color: #2e8bc05d;  /* cor de fundo */
     border: 2px solid black;
 }
 .texto{
-    margin: 5%;
+    margin: 5%; /* Margem externa*/
 }
 .texto iframe{
     display: block;
-    margin: auto;
-    border-radius: 1rem;
+    margin: auto; /* Margem externa*/
+    border-radius: 1rem; /* arredondamento da borda */
 }
 .requisitos{
     display: flex;
@@ -439,17 +439,17 @@ footer h3{
     font-weight: 100;
 }
 @media (max-width: 800px){
-    .produto_pg{
-        margin: 0% -6% 0% -6%;
+    .produto_pg{ 
+        margin: 0% -6% 0% -6%; /* Margem externa*/
         border: none;
         box-shadow: none;
     }
     .produto_img{
         display: block;
-        margin: auto;
+        margin: auto; /* Margem externa*/
     } 
     .botao_produto{
-        margin: 0;
+        margin: 0; /* Margem externa*/
     }
     .requisitos{
         display: flex;
@@ -460,10 +460,10 @@ footer h3{
 @media (max-width: 1500px) {
     .produto_img{
         display: block;
-        margin: auto;
+        margin: auto; /* Margem externa*/
     } 
     .botao_produto{
-        margin: 0;
+        margin: 0; /* Margem externa*/
     }
 }
 @media (max-width: 550px){
@@ -473,7 +473,7 @@ footer h3{
         text-align: center;
     }
     .genero{
-        margin-bottom: 1rem;
+        margin-bottom: 1rem; /* Margem externa*/
     }
     .produto_img{
         width: 16rem;
@@ -483,8 +483,8 @@ footer h3{
     }
     .texto iframe{
         display: block;
-        margin: auto;
-        border-radius: 1rem;
+        margin: auto; /* Margem externa*/
+        border-radius: 1rem; /* arredondamento da borda */
         height: 15rem;
         }
 }
@@ -497,20 +497,20 @@ footer h3{
     "foot foot"; 
     color: #B1D4E0; /* cor */
     font-family: 'Quicksand', sans-serif;
-    margin: 0;
+    margin: 0; /* Margem externa*/
 }
 .form_pg{
     background-color: #043653;  /* cor de fundo */
-    margin: 0% 15% 0% 15%;
-    padding: 1rem;
+    margin: 0% 15% 0% 15%; /* Margem externa*/
+    padding: 1rem; /*Margem interna*/
     box-shadow: 4px 4px 4px #2E8BC0;
     border: 1px solid #B1D4E0;
-    border-radius: 3rem;
+    border-radius: 3rem; /* arredondamento da borda */
 }
 .bloco_form input{
-    padding: 0.5rem;
+    padding: 0.5rem; /*Margem interna*/
     width: 20rem;
-    border-radius: 0.7rem;
+    border-radius: 0.7rem;/* arredondamento da borda */
     background-color: #303030;  /* cor de fundo */
     color: #B1D4E0;
     font-size: 90%;
@@ -528,17 +528,17 @@ footer h3{
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-    margin: 0 10% 0 10%;
+    margin: 0 10% 0 10%; /* Margem externa*/
 }
 .enviar_form button{
-    padding: 0.5rem;
+    padding: 0.5rem; /*Margem interna*/
     background-color: #303030;  /* cor de fundo */
     font-size: 100%;
     border: 3px solid #B1D4E0;
     color: #B1D4E0; /* cor */
-    border-radius: 0.7rem;
-    margin-top: 2rem;
-    margin-left: 73%;
+    border-radius: 0.7rem; /* arredondamento da borda */
+    margin-top: 2rem; /* Margem externa*/
+    margin-left: 73%; /* Margem externa*/
 }
 .enviar_form button:hover{
     cursor: pointer;
@@ -552,13 +552,13 @@ footer h3{
     flex-direction: column;
 }
 .form label{
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.3rem; /* Margem externa*/
 }
 .form_pg img{
     width: 7rem;
     display: block;
-    margin: auto;
-}
+    margin: auto; /* Margem externa*/
+} 
 @media (max-width: 900px){
     .form_pg{
         box-shadow: none;
@@ -567,19 +567,19 @@ footer h3{
     }
     .enviar_form button{
         display: block;
-        margin: auto;
-        margin-top: 2rem;
+        margin: auto; /* Margem externa*/
+        margin-top: 2rem; /* Margem externa*/
     }
     .form{
-        margin-left: 2rem;
+        margin-left: 2rem; /* Margem externa*/
     }
 }
 @media (max-width: 1400px){
     .form_pg{
-        margin: 0% 23% 0% 23%;
+        margin: 0% 23% 0% 23%; /* Margem externa*/
     }
     .form{
-        margin-right: 21%;
+        margin-right: 21%; /* Margem externa*/
     }
 }
 .vermelho{
@@ -587,7 +587,7 @@ footer h3{
 }
 /* --------------------------------------carrinho---------------------------------*/
 .body_car{
-    margin: 0;
+    margin: 0; /* Margem externa*/
     display: grid;
     grid-template-areas: 
     "cabe"
@@ -597,9 +597,9 @@ footer h3{
 }
 .carri{
     background-color: #043653;  /* cor de fundo */
-    margin: 0% 15% 0% 15%;
-    padding: 1rem;
-    border-radius: 5rem;
+    margin: 0% 15% 0% 15%; /* Margem externa*/
+    padding: 1rem; /*Margem interna*/
+    border-radius: 5rem; /* arredondamento da borda */
     box-shadow: 4px 4px 4px #2E8BC0;
     border: 1px solid #B1D4E0;
     display: flex;
@@ -607,8 +607,8 @@ footer h3{
     justify-content: space-between;
 }
 .carri section{
-    margin-top: 1.4rem;
-    margin-left: 5rem;
+    margin-top: 1.4rem; /* Margem externa*/
+    margin-left: 5rem; /* Margem externa*/
 }
 .carri section h1{
     color: #B1D4E0; /* cor */
@@ -616,8 +616,8 @@ footer h3{
 }
 .finalizar{
     width: 24rem;
-    margin-right: 4rem;
-    padding: 1rem;
+    margin-right: 4rem; /* Margem externa*/
+    padding: 1rem; /*Margem interna*/
     color: #B1D4E0; /* cor */
     text-align: center;
 }
@@ -628,8 +628,8 @@ footer h3{
 .finalizar .finalizar_carri{
     border: 3px solid #B1D4E0;
     background-color: rgb(0, 116, 228);  /* cor de fundo */
-    padding: 1.5rem;
-    border-radius: 1rem;
+    padding: 1.5rem; /*Margem interna*/
+    border-radius: 1rem; /* arredondamento da borda */
 }
 .finalizar .finalizar_carri:hover{
     background-color: #2E8BC0;  /* cor de fundo */
@@ -641,25 +641,25 @@ footer h3{
 }
 .finalizar .cancela_carri{
     border: 3px solid #B1D4E0;
-    padding: 1.5rem;
-    border-radius: 1rem;
+    padding: 1.5rem; /*Margem interna*/
+    border-radius: 1rem;/* arredondamento da borda */
 }
 .finalizar h1{
-    margin-top: 3rem;
+    margin-top: 3rem; /* Margem externa*/
 }
 .total{
     color: #2e8b; /* cor */
 }
 .produto_compre{
     border: 1px solid #B1D4E0;
-    border-radius: 1rem;
-    margin-left: 1rem;
-    padding: 1rem;
+    border-radius: 1rem; /* arredondamento da borda */
+    margin-left: 1rem; /* Margem externa*/
+    padding: 1rem; /*Margem interna*/
     background-color: #0c2d48;  /* cor de fundo */
     color: #B1D4E0; /* cor */
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; /* Margem externa*/
     box-shadow: 4px 4px 4px #2E8BC0;
     cursor: cell;
     width: 30rem;
@@ -668,10 +668,10 @@ footer h3{
     background-color: #303030;  /* cor de fundo */
     font-size: 90%;
     color: #B1D4E0; /* cor */
-    border-radius: 0.7rem;
+    border-radius: 0.7rem; /* arredondamento da borda */
     width: 3rem;
     height: 1rem;
-    padding: 0.4rem;
+    padding: 0.4rem; /*Margem interna*/
     border: #B1D4E0 solid 3px;
 }
 .carri_tudo{
@@ -680,7 +680,7 @@ footer h3{
 }
 .produto_compre .carri_img{
     height: 10rem;
-    border-radius: 0.3rem;
+    border-radius: 0.3rem; /* arredondamento da borda */
 }
 .body_car header{
     grid-area: cabe;
@@ -695,8 +695,8 @@ footer h3{
 .lixo img{
     width: auto;
     height: 3rem;
-    margin-top: 0.4rem;
-    margin-right: 10px;
+    margin-top: 0.4rem; /* Margem externa*/
+    margin-right: 10px; /* Margem externa*/
     cursor: pointer;
 }
 .lixo img:hover{
@@ -714,26 +714,26 @@ footer h3{
 }
 @media (max-width: 800px){
     .carri section{
-        margin: 0;
+        margin: 0; /* Margem externa*/
     }
     .carri_produto{
         display: block;
-        margin: auto;
+        margin: auto; /* Margem externa*/
     }
     .produto_compre{
-        margin-left: 0;
+        margin-left: 0; /* Margem externa*/
         width: 90%;
     }
     .carri{
-        padding: 0;
+        padding: 0; /*Margem interna*/
     }
     .finalizar{
-        margin: 0;
+        margin: 0; /* Margem externa*/
         width: 99%;
     }
     .carri_tudo{
         display: flex;
-        margin-right: 2rem;
+        margin-right: 2rem; /* Margem externa*/
     }
     .produto_compre .carri_img{
         width: auto;
@@ -743,7 +743,7 @@ footer h3{
         font-size: 90%;
     }
     .lixo img{
-        padding: 0;
+        padding: 0; /*Margem interna*/
         height: 2rem;
         width: auto;
     }
@@ -752,7 +752,7 @@ footer h3{
     .carri{
         background-color: #0c2d48;  /* cor de fundo */
         border: none;
-        margin: 0;
+        margin: 0; /* Margem externa*/
         box-shadow: none;
     }
     .produto_compre{
@@ -770,9 +770,9 @@ footer h3{
     font-size: 150%;
     color: #B1D4E0; /* cor */
     display: none;
-    margin: auto;
-    padding: 0.3rem;
-    border-radius: 1rem;
+    margin: auto; /* Margem externa*/
+    padding: 0.3rem; /*Margem interna*/
+    border-radius: 1rem; /* arredondamento da borda */
     box-shadow: 4px 4px 4px  #2E8BC0;
 }
 .aside_mob option{
