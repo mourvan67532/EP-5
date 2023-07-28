@@ -42,7 +42,7 @@
     text-decoration:  none;
 }
 .play img{
-    width: 5rem;
+    width: 5rem; /*largura*/
 }
 header{
     display: flex;
@@ -53,7 +53,7 @@ header li {
     display: inline;
 }
 .carrinho{
-    width: 4rem;
+    width: 4rem; /*largura*/
     filter: invert(100%); /* inverter cor da imagem */
 }
 .carrinho:hover{ 
@@ -74,13 +74,13 @@ header li {
     text-decoration: underline;
 }
 .avatar{
-    width: 4rem;
+    width: 4rem; /*largura*/
     height: auto;
     padding-left: 15px; /*Margem interna*/
     padding-right: 5px; /*Margem interna*/
 }
 .menu_mobile img{
-    width: 4rem;
+    width: 4rem; /*largura*/
 }
 .menu_mobile{
     display: none;
@@ -119,11 +119,11 @@ header li {
     transform: translateX(400px); 
 }
 .carrinho_mob{
-    width: 4rem;
+    width: 4rem; /*largura*/
     filter: invert(100%); /* inverter cor da imagem */
 }
 .avatar_mob{
-    width: 3rem;
+    width: 3rem; /*largura*/
     height: auto;
     margin-right: 0.3rem; /* Margem externa*/
 }
@@ -148,7 +148,7 @@ main {
     box-shadow: 4px 4px 4px  #2E8BC0;
 }
 .games{
-    width: 80rem;
+    width: 80rem; /*largura*/
     height: 30rem;
     animation: games_ani 20s infinite; /* animação */
     background-size: 100%;
@@ -173,7 +173,7 @@ main {
     }
 }
 .produtos img{
-    width: 15rem;
+    width: 15rem; /*largura*/
     height: 30rem;
     height: auto;
     border-radius: 1rem; /* arredondamento da borda */
@@ -192,7 +192,7 @@ main {
     border-radius: 1rem; /* arredondamento da borda */
     color: white; /* cor */
     padding: 7px; /*Margem interna*/
-    width: 16rem;
+    width: 16rem; /*largura*/
     height: 26rem;
     box-shadow: 4px 4px 4px  #2E8BC0;
 }
@@ -220,12 +220,12 @@ main {
 }
 @media (max-width: 1100px){
     .texto iframe{
-        width: 100%;
+        width: 100%; /*largura*/
     }
 }
 @media (max-width: 900px) {
     .produtos img{
-        width: 100%;
+        width: 100%; /*largura*/
     }
     .produtos{
         display: flex;
@@ -286,7 +286,7 @@ main {
     text-decoration: none;
 }
 .lado img{
-    width: 10rem;
+    width: 10rem; /*largura*/
     border-radius: 50%; /* arredondamento da borda */
     margin-top: 5rem; /* Margem externa*/
 }
@@ -312,7 +312,7 @@ footer{
     font-size: 220%;
 }
 .rodape img{
-    width: 8rem;
+    width: 8rem; /*largura*/
 }
 .contato{
     display: flex;
@@ -324,7 +324,7 @@ footer{
 }
 .contato .img_ctt{
     filter: invert(100%); /* inverter cor da imagem */
-    width: 2rem;
+    width: 2rem; /*largura*/
 }
 .contato .img_ctt:hover{
     filter: invert(0%); /* voltar a imagem para sua cor padrão */
@@ -337,7 +337,7 @@ footer{
     gap: 1rem;
 }
 .pagamento img{
-    width: 5rem;
+    width: 5rem; /*largura*/
     background-color: #B1D4E0;  /* cor de fundo */
     border-radius: 5px; /* arredondamento da borda */
     padding: 4px; /*Margem interna*/
@@ -370,7 +370,7 @@ footer h3{
     border: 1px solid #B1D4E0;
 }
 .produto_img{
-    width: 25rem;
+    width: 25rem; /*largura*/
     border-radius: 2rem; /* arredondamento da borda */
     margin-left: 4%; /* Margem externa*/
 }
@@ -476,7 +476,7 @@ footer h3{
         margin-bottom: 1rem; /* Margem externa*/
     }
     .produto_img{
-        width: 16rem;
+        width: 16rem; /*largura*/
     }
     .produto_pg{
         background-color: #0c2d48;  /* cor de fundo */
@@ -499,17 +499,18 @@ footer h3{
     font-family: 'Quicksand', sans-serif;
     margin: 0; /* Margem externa*/
 }
-.form_pg{
+#form_pg{
     background-color: #043653;  /* cor de fundo */
     margin: 0% 15% 0% 15%; /* Margem externa*/
     padding: 1rem; /*Margem interna*/
     box-shadow: 4px 4px 4px #2E8BC0;
     border: 1px solid #B1D4E0;
     border-radius: 3rem; /* arredondamento da borda */
+    display: none;
 }
 .bloco_form input{
     padding: 0.5rem; /*Margem interna*/
-    width: 20rem;
+    width: 20rem; /*largura*/
     border-radius: 0.7rem;/* arredondamento da borda */
     background-color: #303030;  /* cor de fundo */
     color: #B1D4E0;
@@ -519,7 +520,7 @@ footer h3{
 .bloco_form input:hover{
     background-color: #3b3b3b;  /* cor de fundo */
 }
-.form_pg h1{
+#form_pg h1{
     text-align: center;
 }
 .form{
@@ -554,8 +555,8 @@ footer h3{
 .form label{
     margin-bottom: 0.3rem; /* Margem externa*/
 }
-.form_pg img{
-    width: 7rem;
+#form_pg img, #login img{
+    width: 7rem; /*largura*/
     display: block;
     margin: auto; /* Margem externa*/
 } 
@@ -585,6 +586,45 @@ footer h3{
 .vermelho{
     color: red; /* cor */
 }
+/*----------------------------------------login-----------------------------------*/
+#login{
+    background-color: #043653;  /* cor de fundo */
+    margin: 6% 37% 7% 37%; /* Margem externa*/
+    padding: 1rem; /*Margem interna*/
+    box-shadow: 4px 4px 4px #2E8BC0;
+    border: 1px solid #B1D4E0;
+    border-radius: 3rem; /* arredondamento da borda */
+    text-align: center;
+}
+#login input{
+    display: block;
+    margin: auto; /* Margem externa*/
+    width: 20rem; /* largura */
+    height: 1.4rem;
+    margin-bottom: 4px; /*Margem externa*/
+    font-size: 120%;
+    margin-top: 1px;
+}
+.botao_login button{
+    border: 3px solid #B1D4E0; /* borda */
+    background-color: rgb(0, 116, 228);  /* cor de fundo */
+    padding-left: 8rem; /*Margem interna*/
+    padding-right: 8rem; /*Margem interna*/
+    border-radius: 1rem; /* arredondamento da borda */
+    margin: 2% 10% 0% 10% ; /* Margem externa*/
+    color: #B1D4E0 ; /* cor */
+}
+.botao_login button:hover{
+    border: 3px solid #000; /* borda */
+    color: #000 ; /* cor */
+}
+.login_cadastro a{
+    color: #B1D4E0; /* cor */
+}
+.login_cadastro a:hover{
+    color: #2e8bc0; /* cor */
+}
+
 /* --------------------------------------carrinho---------------------------------*/
 .body_car{
     margin: 0; /* Margem externa*/
@@ -615,7 +655,7 @@ footer h3{
     text-align: center;
 }
 .finalizar{
-    width: 24rem;
+    width: 24rem; /*largura*/
     margin-right: 4rem; /* Margem externa*/
     padding: 1rem; /*Margem interna*/
     color: #B1D4E0; /* cor */
@@ -662,17 +702,17 @@ footer h3{
     margin-bottom: 1rem; /* Margem externa*/
     box-shadow: 4px 4px 4px #2E8BC0;
     cursor: cell;
-    width: 30rem;
+    width: 30rem; /*largura*/
 }
 .descr_carri input{
     background-color: #303030;  /* cor de fundo */
     font-size: 90%;
     color: #B1D4E0; /* cor */
     border-radius: 0.7rem; /* arredondamento da borda */
-    width: 3rem;
+    width: 3rem; /*largura*/
     height: 1rem;
     padding: 0.4rem; /*Margem interna*/
-    border: #B1D4E0 solid 3px;
+    border: #B1D4E0 solid 3px; /* borda */
 }
 .carri_tudo{
     display: flex;
@@ -693,7 +733,7 @@ footer h3{
     grid-area: roda;
 }
 .lixo img{
-    width: auto;
+    width: auto; /*largura*/
     height: 3rem;
     margin-top: 0.4rem; /* Margem externa*/
     margin-right: 10px; /* Margem externa*/
@@ -722,21 +762,21 @@ footer h3{
     }
     .produto_compre{
         margin-left: 0; /* Margem externa*/
-        width: 90%;
+        width: 90%; /*largura*/
     }
     .carri{
         padding: 0; /*Margem interna*/
     }
     .finalizar{
         margin: 0; /* Margem externa*/
-        width: 99%;
+        width: 99%; /*largura*/
     }
     .carri_tudo{
         display: flex;
         margin-right: 2rem; /* Margem externa*/
     }
     .produto_compre .carri_img{
-        width: auto;
+        width: auto; /*largura*/
         height: 8rem;
     }
     .produto_compre h3{
@@ -745,7 +785,7 @@ footer h3{
     .lixo img{
         padding: 0; /*Margem interna*/
         height: 2rem;
-        width: auto;
+        width: auto; /*largura*/
     }
 }
 @media (max-width: 500px){

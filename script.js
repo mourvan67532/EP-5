@@ -16,3 +16,11 @@ function lixo3(){
     el.style.cssText =
     'display:none;';
 }
+function cad(){
+    let el = document.getElementById('form_pg');
+    el.style.cssText =
+    'display:block;';
+    let lo = document.getElementById('login');
+    lo.style.cssText =
+    'display:none;';
+}
