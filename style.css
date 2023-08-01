@@ -438,6 +438,22 @@ footer h3{
 .requisitos b{
     font-weight: 100;
 }
+.gameplay{
+    width: 50rem;
+    display: block;
+    margin: auto;
+    border: 3px solid #B1D4E0; /* borda*/
+}
+.gameplay2{
+    display: flex;
+    overflow-x:scroll;
+}
+.gameplay img{
+    width: 50rem;
+}
+.gameplay2::-webkit-scrollbar {
+    display: none;
+  }
 @media (max-width: 800px){
     .produto_pg{ 
         margin: 0% -6% 0% -6%; /* Margem externa*/
@@ -560,7 +576,9 @@ footer h3{
     margin: auto; /* Margem externa*/
 } 
 .fazer_login{
-    margin-left: 20%;
+    text-align: center; /* alinhar texto ao meio*/
+    margin-bottom: 1rem; /* margem externa*/
+    margin-top: 1rem; /* margem externa*/
 }
 .fazer_login a{
     color: #B1D4E0; /* cor */
