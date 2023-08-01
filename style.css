@@ -499,14 +499,13 @@ footer h3{
     font-family: 'Quicksand', sans-serif;
     margin: 0; /* Margem externa*/
 }
-#form_pg{
+.form_pg{
     background-color: #043653;  /* cor de fundo */
     margin: 0% 15% 0% 15%; /* Margem externa*/
     padding: 1rem; /*Margem interna*/
     box-shadow: 4px 4px 4px #2E8BC0;
     border: 1px solid #B1D4E0;
     border-radius: 3rem; /* arredondamento da borda */
-    display: none;
 }
 .bloco_form input{
     padding: 0.5rem; /*Margem interna*/
@@ -520,7 +519,7 @@ footer h3{
 .bloco_form input:hover{
     background-color: #3b3b3b;  /* cor de fundo */
 }
-#form_pg h1{
+.form_pg h1{
     text-align: center;
 }
 .form{
@@ -555,11 +554,22 @@ footer h3{
 .form label{
     margin-bottom: 0.3rem; /* Margem externa*/
 }
-#form_pg img, #login img{
+.form_pg img, .login img{
     width: 7rem; /*largura*/
     display: block;
     margin: auto; /* Margem externa*/
 } 
+.fazer_login{
+    margin-left: 20%;
+}
+.fazer_login a{
+    color: #B1D4E0; /* cor */
+    text-decoration: none; /* retirar sublinhado*/
+}
+.fazer_login a:hover{
+    color: #2E8BC0; /* cor */
+    text-decoration: underline; /* sublihar texto*/
+}
 @media (max-width: 900px){
     .form_pg{
         box-shadow: none;
@@ -587,16 +597,19 @@ footer h3{
     color: red; /* cor */
 }
 /*----------------------------------------login-----------------------------------*/
-#login{
+.login{
     background-color: #043653;  /* cor de fundo */
-    margin: 6% 37% 7% 37%; /* Margem externa*/
+    display: block;
+    margin: auto; /* Margem externa*/
+    margin-left: 30%;
+    margin-right: 30%;
     padding: 1rem; /*Margem interna*/
     box-shadow: 4px 4px 4px #2E8BC0;
     border: 1px solid #B1D4E0;
     border-radius: 3rem; /* arredondamento da borda */
     text-align: center;
 }
-#login input{
+.login input{
     display: block;
     margin: auto; /* Margem externa*/
     width: 20rem; /* largura */
@@ -624,7 +637,32 @@ footer h3{
 .login_cadastro a:hover{
     color: #2e8bc0; /* cor */
 }
-
+@media (max-width: 1200px){
+    .login{
+        margin: 7% 0% 7% 0%; /* Margem externa*/
+        background-color: #0c2d48; /* cor de fundo*/
+        border: none; /* borda */
+        box-shadow: none; /* sobra do elemento*/
+        padding: 0.2rem; /*Margem interna*/
+    }
+    .botao_login button{
+        margin: 0;
+    }
+    .login input{
+        width: 50%;
+    }
+}
+@media (max-width: 600px){
+    .login input{
+        width: 100%;
+    }
+    .botao_login button{
+        padding: 2% 40% 2% 40%;
+    }
+    .login input{
+        margin-left: -0.7rem;
+    }
+}
 /* --------------------------------------carrinho---------------------------------*/
 .body_car{
     margin: 0; /* Margem externa*/
