@@ -458,6 +458,9 @@ footer h3{
     border: 3px solid #B1D4E0;
     border-radius: 0.6rem;
 }
+#mini_img1{
+    opacity: 50%;
+}
 .mini_img{
     display: block;
     margin: auto;
