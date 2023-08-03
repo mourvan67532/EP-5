@@ -443,7 +443,7 @@ footer h3{
     flex-direction: column;
 }
 .gameplay2 #img1,#img2,#img3,#img4,#img5{
-    width: 50rem;
+    width: 70%;
     border: 3px solid #B1D4E0;
     border-radius: 0.6rem;
     display: block;
@@ -453,7 +453,7 @@ footer h3{
     display: none;
 }
 #mini_img1, #mini_img2, #mini_img3, #mini_img4, #mini_img5 {
-    width: 10rem;
+    width: 10%;
     margin: 0.5rem;
     border: 3px solid #B1D4E0;
     border-radius: 0.6rem;
@@ -462,10 +462,13 @@ footer h3{
     opacity: 50%;
 }
 .mini_img{
-    display: block;
-    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 @media (max-width: 800px){
+    .gameplay2 #img1,#img2,#img3,#img4,#img5{
+        width: 80%;
+    }
     .produto_pg{ 
         margin: 0% -6% 0% -6%; /* Margem externa*/
         border: none;
