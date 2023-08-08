@@ -467,7 +467,7 @@ footer h3{
 }
 @media (max-width: 800px){
     .gameplay2 #img1,#img2,#img3,#img4,#img5{
-        width: 80%;
+        width: 98%;
     }
     .produto_pg{ 
         margin: 0% -6% 0% -6%; /* Margem externa*/
