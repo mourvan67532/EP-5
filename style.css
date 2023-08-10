@@ -542,22 +542,22 @@ footer h3{
     width: 20rem; /*largura*/
     border-radius: 0.7rem;/* arredondamento da borda */
     background-color: #303030;  /* cor de fundo */
-    color: #B1D4E0;
-    font-size: 90%;
-    outline: 2px solid #2E8BC0;
+    color: #B1D4E0; /* cor*/
+    font-size: 90%; /* tamanha da fonte*/
+    outline: 2px solid #2E8BC0; /* borda interna*/
 }
 .bloco_form input:hover{
     background-color: #3b3b3b;  /* cor de fundo */
 }
 .form_pg h1{
-    text-align: center;
+    text-align: center; /* alinhar texto ao centro */
 }
 .form{
-    font-size: 120%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
+    font-size: 120%; /*tamanho  da fonte*/
+    display: flex; /*flexbox*/
+    flex-wrap: wrap; /*quebra de linha*/
+    gap: 1rem; /* espaçamento entre os elementos*/
+    justify-content: center; /*centralizar*/
     margin: 0 10% 0 10%; /* Margem externa*/
 }
 .enviar_form button{
@@ -571,15 +571,15 @@ footer h3{
     margin-left: 73%; /* Margem externa*/
 }
 .enviar_form button:hover{
-    cursor: pointer;
-    border: 3px solid #2e8bc0;
+    cursor: pointer; /*mudar cursor*/
+    border: 3px solid #2e8bc0; /*borda*/
 }
 .main_form{
-    box-shadow: none;
+    box-shadow: none; /*sombra*/
 }
 .bloco_form{
-    display: flex;
-    flex-direction: column;
+    display: flex; /*flexbox*/
+    flex-direction: column; /*colocar o flex em coluna*/
 }
 .form label{
     margin-bottom: 0.3rem; /* Margem externa*/
@@ -604,8 +604,8 @@ footer h3{
 }
 @media (max-width: 900px){
     .form_pg{
-        box-shadow: none;
-        border: none;
+        box-shadow: none; /*sombra*/
+        border: none; /*borda*/
         background-color: #0c2d48;  /* cor de fundo */
     }
     .enviar_form button{
@@ -639,16 +639,16 @@ footer h3{
     box-shadow: 4px 4px 4px #2E8BC0;
     border: 1px solid #B1D4E0;
     border-radius: 3rem; /* arredondamento da borda */
-    text-align: center;
+    text-align: center; /*alinhar texto ao centro*/
 }
 .login input{
     display: block;
     margin: auto; /* Margem externa*/
     width: 20rem; /* largura */
-    height: 1.4rem;
+    height: 1.4rem; /*altura*/
     margin-bottom: 4px; /*Margem externa*/
-    font-size: 120%;
-    margin-top: 1px;
+    font-size: 120%; /*tamanho da fonte*/
+    margin-top: 1px; /*margem*/
 }
 .botao_login button{
     border: 3px solid #B1D4E0; /* borda */
@@ -678,43 +678,43 @@ footer h3{
         padding: 0.2rem; /*Margem interna*/
     }
     .botao_login button{
-        margin: 0;
+        margin: 0; /*margem externa*/
     }
     .login input{
-        width: 50%;
+        width: 50%; /*largura*/
     }
 }
 @media (max-width: 600px){
     .login input{
-        width: 100%;
+        width: 100%; /*largura*/
     }
     .botao_login button{
-        padding: 2% 40% 2% 40%;
+        padding: 2% 40% 2% 40%; /* margem interna*/
     }
     .login input{
-        margin-left: -0.7rem;
+        margin-left: -0.7rem; /*margem externa*/
     }
 }
 /* --------------------------------------carrinho---------------------------------*/
 .body_car{
     margin: 0; /* Margem externa*/
-    display: grid;
+    display: grid; /*grid*/
     grid-template-areas: 
     "cabe"
     "cart"
     "roda";
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif; /* fonte*/
 }
 .carri{
     background-color: #043653;  /* cor de fundo */
     margin: 0% 15% 0% 15%; /* Margem externa*/
     padding: 1rem; /*Margem interna*/
     border-radius: 5rem; /* arredondamento da borda */
-    box-shadow: 4px 4px 4px #2E8BC0;
-    border: 1px solid #B1D4E0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    box-shadow: 4px 4px 4px #2E8BC0; /*sombra*/
+    border: 1px solid #B1D4E0; /* borda*/
+    display: flex; /*flexbox*/
+    flex-wrap: wrap; /* quebra de linha*/
+    justify-content: space-between; /*espaço entre os elementos*/
 }
 .carri section{
     margin-top: 1.4rem; /* Margem externa*/
@@ -722,14 +722,14 @@ footer h3{
 }
 .carri section h1{
     color: #B1D4E0; /* cor */
-    text-align: center;
-}
+    text-align: center; /*alinhar texto ao centro*/
+} 
 .finalizar{
     width: 24rem; /*largura*/
     margin-right: 4rem; /* Margem externa*/
     padding: 1rem; /*Margem interna*/
     color: #B1D4E0; /* cor */
-    text-align: center;
+    text-align: center; /*alinhar texto ao centro*/
 }
 .finalizar a{
     text-decoration: none;  
@@ -743,14 +743,14 @@ footer h3{
 }
 .finalizar .finalizar_carri:hover{
     background-color: #2E8BC0;  /* cor de fundo */
-    border: 3px solid black;
+    border: 3px solid black; /*borda*/
 }
 .finalizar .cancela_carri:hover{
     background-color: #2e8bc05d;  /* cor de fundo */
-    border: 3px solid black;
+    border: 3px solid black; /*borda*/
 }
 .finalizar .cancela_carri{
-    border: 3px solid #B1D4E0;
+    border: 3px solid #B1D4E0; /*borda*/
     padding: 1.5rem; /*Margem interna*/
     border-radius: 1rem;/* arredondamento da borda */
 }
@@ -767,29 +767,29 @@ footer h3{
     padding: 1rem; /*Margem interna*/
     background-color: #0c2d48;  /* cor de fundo */
     color: #B1D4E0; /* cor */
-    display: flex;
+    display: flex; /*flexbox*/
     justify-content: space-between;
     margin-bottom: 1rem; /* Margem externa*/
     box-shadow: 4px 4px 4px #2E8BC0;
-    cursor: cell;
+    cursor: cell; /*mudar cursor*/
     width: 30rem; /*largura*/
 }
 .descr_carri input{
     background-color: #303030;  /* cor de fundo */
-    font-size: 90%;
+    font-size: 90%; /*tamanho da fonte*/
     color: #B1D4E0; /* cor */
     border-radius: 0.7rem; /* arredondamento da borda */
     width: 3rem; /*largura*/
-    height: 1rem;
+    height: 1rem; /*altura*/
     padding: 0.4rem; /*Margem interna*/
     border: #B1D4E0 solid 3px; /* borda */
 }
 .carri_tudo{
-    display: flex;
-    gap: 9px;
+    display: flex; /* flexbox*/
+    gap: 9px; /*espaço entre os elementos*/
 }
 .produto_compre .carri_img{
-    height: 10rem;
+    height: 10rem; /*altura*/
     border-radius: 0.3rem; /* arredondamento da borda */
 }
 .body_car header{
@@ -804,23 +804,20 @@ footer h3{
 }
 .lixo img{
     width: auto; /*largura*/
-    height: 3rem;
+    height: 3rem; /*altura*/
     margin-top: 0.4rem; /* Margem externa*/
     margin-right: 10px; /* Margem externa*/
-    cursor: pointer;
+    cursor: pointer; /*mudar cursor*/
 }
 .lixo img:hover{
     filter: invert(77%); /* inverter cor da imagem */
 }
 .lixo{
-    display: flex;
-    align-items: end;
+    display: flex; /*flexbox*/
+    align-items: end; /*alinhar itens ao final*/
 }
 #lixo_java, #lixo_java2, #lixo_java3 {
     display: block;
-}
-@media (max-width: 1500px){
-
 }
 @media (max-width: 800px){
     .carri section{
