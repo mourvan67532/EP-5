@@ -924,20 +924,34 @@ footer h3{
 #lixo_java, #lixo_java2, #lixo_java3 {
     display: block;
 }
-@media (max-width: 800px){
+@media (max-width: 1300px){
+    .carri_produto{
+        width: 50%; /*largura*/
+    }
+    .finalizar{
+        display: block;
+        margin: auto; /* Margem externa*/
+    }
+    .produto_compre{
+        margin-left: 0; /* Margem externa*/
+    }
+    .carri{
+        padding: 0%; /*Margem interna*/
+    }
+}
+@media (max-width: 1000px){
     .carri section{
         margin: 0; /* Margem externa*/
     }
     .carri_produto{
         display: block;
         margin: auto; /* Margem externa*/
+        width: auto; /*largura*/
     }
     .produto_compre{
-        margin-left: 0; /* Margem externa*/
         width: 90%; /*largura*/
     }
     .carri{
-        padding: 0; /*Margem interna*/
         display: block;
         margin: auto;
     }
