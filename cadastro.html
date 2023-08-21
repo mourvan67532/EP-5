@@ -5,129 +5,130 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Play_Game</title> 
+    <link rel="stylesheet" href="style.css"> <!--css-->
     <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <!--fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
-    <title>Play_Game</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 </head>
 <body class="body_form">
-    <header class="grid_h">
+    <header class="grid_h"> <!--header-->
         <div class="menu_mobile">
-            <input type="checkbox" id="check_mob">
-            <label for="check_mob">
-                <img src="imagens/menu.png" alt="menu mobile">
+            <input type="checkbox" id="check_mob"> <!--check box para o menu retratil-->
+            <label for="check_mob"> 
+                <img src="imagens/menu.png" alt="menu mobile"> <!-- imagem para clicar na check box-->
             </label>
-            <nav class="mobile">
+            <nav class="mobile"> <!--menu retratil-->
                 <div class="mob_cadastro">
                     <label for="check_mob">
-                        <img src="imagens/seta_esquerda.png" alt="menu mobile">
+                        <img src="imagens/seta_esquerda.png" alt="menu mobile"> <!--imagem para fechar menu retratil -->
                     </label>
-                    <a href="cadastro.html" class="avatarmob_a"><img src="imagens/avatar.png" alt="avatar" class="avatar_mob"></a>
+                    <a href="cadastro.html" class="avatarmob_a"><img src="imagens/avatar.png" alt="avatar" class="avatar_mob"></a> <!--cadatro-->
                     <a href="cadastro.html"><h2>Cadastre-se</h2></a>   
                 </div>
                 <div class="mob_cart">
                     <a href="carrinho.html">
-                        <img src="imagens/carrinho.png" alt="carrinho" class="carrinho_mob">
+                        <img src="imagens/carrinho.png" alt="carrinho" class="carrinho_mob"> <!--carrinho-->
                     </a>
                 </div>
             </nav>
         </div>
         <div class="play">
-                <a href="index.html"><img src="imagens/logo.png" alt="logo"></a>
-                <a href="index.html"><h1>Play_Game</h1></a>
+                <a href="index.html"><img src="imagens/logo.png" alt="logo"></a> <!--logo-->
+                <a href="index.html"><h1>Play_Game</h1></a> <!--nome-->
         </div>
         <nav>
             <div class="usuario"> 
                 <a href="carrinho.html">
-                    <img src="imagens/carrinho.png" alt="carrinho" class="carrinho">
+                    <img src="imagens/carrinho.png" alt="carrinho" class="carrinho"> <!--carrinho-->
                 </a>
                 <a href="cadastro.html" class="avatar_a">
-                    <img src="imagens/avatar.png" alt="avatar" class="avatar">
+                    <img src="imagens/avatar.png" alt="avatar" class="avatar"> <!--cadastro-->
                     <h2>Cadastre-se</h2>
                 </a>
             </div>
         </nav>
     </header>
-    <main class="main_form">
-        <div class="form_pg">
-            <img src="imagens/logo.png" alt="logo">
+    <main class="main_form"> <!--main-->
+        <div class="form_pg"> 
+            <img src="imagens/logo.png" alt="logo"> <!--logo-->
             <h1>Cadastro</h1>
-                <form action="#" method="post">
+                <form action="#" method="post"> <!--formulario-->
                     <div class="form">
-                        <div class="bloco_form">
+                        <div class="bloco_form"> <!--input e label para cada formulario-->
                             <label for="nome">Nome</label>
-                            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required> <!--nome-->
                         </div>
-                        <div class="bloco_form">
-                            <label for="nome">Sobremome</label>
-                            <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" required>
+                        <div class="bloco_form">  <!--input e label para cada formulario-->
+                            <label for="sobrenome">Sobremome</label>
+                            <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" required> <!--sobrenome-->
                         </div>
-                        <div class="bloco_form">
+                        <div class="bloco_form">  <!--input e label para cada formulario-->
                             <label for="email">E-mail</label>
-                            <input type="email" name="email" id="email" placeholder="Digite aqui seu email" required>
+                            <input type="email" name="email" id="email" placeholder="Digite aqui seu email" required> <!--email-->
                         </div>
-                        <div class="bloco_form">
+                        <div class="bloco_form"> <!--input e label para cada formulario-->
                             <label for="tele">Telefone</label>
-                            <input type="tel" name="tele" id="tele" placeholder="(xx) xxxxx-xxxx"  inputmode="numeric" required>
+                            <input type="tel" name="tele" id="tele" placeholder="(xx) xxxxx-xxxx"  inputmode="numeric" required> <!--telefone-->
                         </div>
-                        <div class="bloco_form">
+                        <div class="bloco_form"> <!--input e label para cada formulario-->
                             <label for="cpf">CPF</label>
-                            <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF  (somente números)" inputmode="numeric" required>
+                            <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF  (somente números)" inputmode="numeric" required> <!--cpf-->
                         </div>
-                        <div class="bloco_form">
+                        <div class="bloco_form"> <!--input e label para cada formulario-->
                             <label for="rg">RG</label>
-                            <input type="text" name="rg" id="rg" placeholder="Digite seu RG  (somente números)" inputmode="numeric" required>
+                            <input type="text" name="rg" id="rg" placeholder="Digite seu RG  (somente números)" inputmode="numeric" required> <!--RG-->
                         </div>
-                        <div class="bloco_form">
+                        <div class="bloco_form"> <!--input e label para cada formulario-->
                             <label for="cartao">Cartão</label>
-                            <input type="text" name="cartao" id="cartao" placeholder="Digite seu cartão (opicional)" inputmode="numeric">
+                            <input type="text" name="cartao" id="cartao" placeholder="Digite seu cartão (opicional)" inputmode="numeric"> <!--cartão-->
                         </div>
-                        <div class="bloco_form">
-                            <label for="nome_user">Usuário</label>
-                            <input type="text" name="name_user" id="name_user" placeholder="Crie um nome de usuário" required>
+                        <div class="bloco_form"> <!--input e label para cada formulario-->
+                            <label for="name_user">Usuário</label>
+                            <input type="text" name="name_user" id="name_user" placeholder="Crie um nome de usuário" required> <!--nome de usuario-->
                         </div>
-                        <div class="bloco_form">
-                            <label for="senha_aluno">Senha</label>
-                            <input type="password" name="senha" id="senha" placeholder="Crie uma senha" required> 
+                        <div class="bloco_form"> <!--input e label para cada formulario-->
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" id="senha" placeholder="Crie uma senha" required> <!--senha-->
                         </div>
-                        <div class="bloco_form">
-                            <label for="senha_aluno">Confirme sua Senha</label>
-                            <input type="password" name="senha_confirm" id="senha_confirm" placeholder="Corfime a senha" required> 
+                        <div class="bloco_form"> <!--input e label para cada formulario-->
+                            <label for="senha_confirm">Confirme sua Senha</label>
+                            <input type="password" name="senha_confirm" id="senha_confirm" placeholder="Corfime a senha" required> <!--confirmar senha-->
                         </div>
                     </div>
                     <div class="enviar_form">
-                        <button type="submit">Enviar</button>
+                        <button type="submit">Enviar</button> <!--botão para enviar o formulario-->
                     </div>
                 </form>
                 <div class="fazer_login">
-                    <a href="login.html"> Já possui uma conta? Entrar</a>
+                    <a href="login.html"> Já possui uma conta? Entrar</a> <!--ir para a pagina de login-->
                 </div>
         </div>
     </main>
-    <footer>
+    <footer> <!--footer-->
         <section class="footer">
             <div class="rodape">
-                <h1>Play_game</h1>
-                <img src="imagens/logo.png" alt="logo">
+                <h1>Play_game</h1> <!--nome-->
+                <img src="imagens/logo.png" alt="logo"> <!--logo-->
             </div>
             <h3>Pagamento:</h3>
-            <div class="pagamento">
+            <div class="pagamento"> <!--pagamentos-->
                 <img src="imagens/pix.png" alt="pix">
                 <img src="imagens/boleto.png" alt="boleto">
                 <img src="imagens/mastercard.png" alt="mastercard">
                 <img src="imagens/visa.png" alt="visa">
             </div>
         </section>
-        <div class="contato">
-            <a href="https://github.com/mourvan67532" target="_blank"><img src="imagens/github.png" alt="logo git hub" class="img_ctt"></a>
-            <a href="#"><img src="imagens/facebook.png" alt="logo facebook" class="img_ctt"></a>
-            <a href="#"><img src="imagens/instagram.png" alt="logo instagram" class="img_ctt"></a>
-            <a href="#"><img src="imagens/youtube.png" alt="logo youtube" class="img_ctt"></a>
+        <div class="contato"> <!--contatos-->
+            <a href="https://github.com/mourvan67532" target="_blank"><img src="imagens/github.png" alt="logo git hub" class="img_ctt"></a> <!--github-->
+            <a href="#"><img src="imagens/facebook.png" alt="logo facebook" class="img_ctt"></a> <!--facebook-->
+            <a href="#"><img src="imagens/instagram.png" alt="logo instagram" class="img_ctt"></a> <!--instagram-->
+            <a href="#"><img src="imagens/youtube.png" alt="logo youtube" class="img_ctt"></a> <!--youtube-->
         </div>
     </footer>
 </body>

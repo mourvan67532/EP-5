@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css"> <!--css-->
+    <title>Play_Game</title> <!--titulo-->
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon"> <!--logo-->
+    <!--fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
-    <title>Play_Game</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
@@ -17,65 +18,65 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 </head>
-<body class="body_car">
-    <script>
+<body class="body_car"> 
+    <script> //javascript
         function obrigado(){
-        alert ("Compra finalizada com sucesso")
+        alert ("Compra finalizada com sucesso") //mensagem após confirmar compra
         }
-        function lixo(){
+        function lixo(){ //ao clicar mudar css
             let el = document.getElementById('lixo_java');
             el.style.cssText =
             'display:none;';
         }
-        function lixo2(){
+        function lixo2(){ //ao clicar mudar css
             let el = document.getElementById('lixo_java2');
             el.style.cssText =
             'display:none;';
         }
-        function lixo3(){
+        function lixo3(){ //ao clicar mudar css
             let el = document.getElementById('lixo_java3');
             el.style.cssText =
             'display:none;';
         }
     </script>
-    <header class="grid_h">
+    <header class="grid_h"> <!--header-->
         <div class="menu_mobile">
-            <input type="checkbox" id="check_mob">
+            <input type="checkbox" id="check_mob"> <!--checkbox-->
             <label for="check_mob">
-                <img src="imagens/menu.png" alt="menu mobile">
+                <img src="imagens/menu.png" alt="menu mobile"> <!--imagem do menu-->
             </label>
-            <nav class="mobile">
+            <nav class="mobile"> <!--menu responsivo-->
                 <div class="mob_cadastro">
                     <label for="check_mob">
-                        <img src="imagens/seta_esquerda.png" alt="menu mobile">
+                        <img src="imagens/seta_esquerda.png" alt="menu mobile"> <!--imagem para fechar menu retratil-->
                     </label>
-                    <a href="cadastro.html" class="avatarmob_a"><img src="imagens/avatar.png" alt="avatar" class="avatar_mob"></a>
-                    <a href="cadastro.html"><h2>Cadastre-se</h2></a>   
+                    <a href="cadastro.html" class="avatarmob_a"><img src="imagens/avatar.png" alt="avatar" class="avatar_mob"></a> <!--cadastro-->
+                    <a href="cadastro.html"><h2>Cadastre-se</h2></a>  <!--cadastro-->
                 </div>
                 <div class="mob_cart">
-                    <a href="carrinho.html">
+                    <a href="carrinho.html"> <!--carrinho-->
                         <img src="imagens/carrinho.png" alt="carrinho" class="carrinho_mob">
                     </a>
                 </div>
             </nav>
         </div>
         <div class="play">
-                <a href="index.html"><img src="imagens/logo.png" alt="logo"></a>
-                <a href="index.html"><h1>Play_Game</h1></a>
+                <a href="index.html"><img src="imagens/logo.png" alt="logo"></a> <!--logo-->
+                <a href="index.html"><h1>Play_Game</h1></a> <!--nome da pagina-->
         </div>
         <nav>
             <div class="usuario"> 
-                <a href="carrinho.html">
-                    <img src="imagens/carrinho.png" alt="carrinho" class="carrinho">
+                <a href="carrinho.html"> <!--carrinho-->
+                    <img src="imagens/carrinho.png" alt="carrinho" class="carrinho"> 
                 </a>
-                <a href="cadastro.html" class="avatar_a">
+                <a href="cadastro.html" class="avatar_a"> <!--cadastro-->
                     <img src="imagens/avatar.png" alt="avatar" class="avatar">
                     <h2>Cadastre-se</h2>
                 </a>
             </div>
         </nav>
     </header>
-    <main>
+    <main> <!--main-->
         <div class="carri">
             <section>
                 <h1>Produtos:</h1>
@@ -83,15 +84,15 @@
                     <div class="carri_produto">
                         <div class="produto_compre">
                             <div class="carri_tudo">
-                                <img src="imagens/capa_spider.jpeg" alt="capa jogo spider man" class="carri_img">
+                                <img src="imagens/capa_spider.jpeg" alt="capa jogo spider man" class="carri_img"> <!--imagem do jogo-->
                                 <div class="descr_carri">
-                                    <h3>Spider-man Remastered</h3>
-                                    <h3>R$:160,97</h3>
-                                    <input type="number"  min="1" max="10" placeholder="01">
+                                    <h3>Spider-man Remastered</h3> <!--nome do jogo-->
+                                    <h3>R$:160,97</h3> <!--preço-->
+                                    <input type="number"  min="1" max="10" placeholder="01"> <!--quantidade-->
                                 </div>
                             </div>
                             <div class="lixo">
-                                <img src="imagens/lixo.png" alt="lixeira" title="Remover" onclick="lixo()">
+                                <img src="imagens/lixo.png" alt="lixeira" title="Remover" onclick="lixo()"> <!--imagem da lixeira-->
                             </div>
                         </div>
                     </div>
@@ -101,15 +102,15 @@
                     <div class="carri_produto">
                         <div class="produto_compre">
                             <div class="carri_tudo">
-                                <img src="imagens/fifa 23.jpeg" alt="capa jogo fifa23" class="carri_img">
+                                <img src="imagens/fifa 23.jpeg" alt="capa jogo fifa23" class="carri_img">  <!--imagem do jogo-->
                                 <div class="descr_carri">
-                                    <h3>EA SPORTS™ FIFA 23</h3>
-                                    <h3>R$:100,90</h3>
-                                    <input type="number"  min="1" max="10" placeholder="01">
+                                    <h3>EA SPORTS™ FIFA 23</h3> <!--nome do jogo-->
+                                    <h3>R$:100,90</h3> <!--preço-->
+                                    <input type="number"  min="1" max="10" placeholder="01"> <!--quantidade-->
                                 </div>
                             </div>
                             <div class="lixo">
-                                <img src="imagens/lixo.png" alt="lixeira" title="Remover"  onclick="lixo2()">
+                                <img src="imagens/lixo.png" alt="lixeira" title="Remover"  onclick="lixo2()"> <!--imagem da lixeira-->
                             </div>
                         </div>
                     </div>
@@ -119,15 +120,15 @@
                     <div class="carri_produto">
                         <div class="produto_compre">
                             <div class="carri_tudo">
-                                <img src="imagens/gow_capa.png" alt="capa jogo God of war" class="carri_img">
+                                <img src="imagens/gow_capa.png" alt="capa jogo God of war" class="carri_img">  <!--imagem do jogo-->
                                 <div class="descr_carri">
-                                    <h3>God of war</h3>
-                                    <h3>R$:119,90</h3>
-                                    <input type="number"  min="1" max="10" placeholder="01">
+                                    <h3>God of war</h3> <!--nome do jogo-->
+                                    <h3>R$:119,90</h3> <!--preço-->
+                                    <input type="number"  min="1" max="10" placeholder="01"> <!--quantidade-->
                                 </div>
                             </div>
                             <div class="lixo">
-                                <img src="imagens/lixo.png" alt="lixeira" title="Remover"  onclick="lixo3()">
+                                <img src="imagens/lixo.png" alt="lixeira" title="Remover"  onclick="lixo3()"> <!--imagem da lixeira-->
                             </div>
                         </div>
                     </div>
@@ -135,38 +136,38 @@
             </section>
             <div class="finalizar">
                 <h1>Resumo</h1>
-                <br>
-                <br>
-                <br>
-                <h2 class="total">Total: R$:381,77</h2>
+                <br> <!--espaço-->
+                <br> <!--espaço-->
+                <br> <!--espaço-->
+                <h2 class="total">Total: R$:381,77</h2> <!--preço total-->
                 <a href="#" onclick="obrigado()">
-                    <h2 class="finalizar_carri">Finalizar Compra</h2>
+                    <h2 class="finalizar_carri">Finalizar Compra</h2> <!--botão para finalizar compra-->
                 </a>
                 <a href="#">
-                    <h2 class="cancela_carri">Limpar Carrinho</h2>
+                    <h2 class="cancela_carri">Limpar Carrinho</h2> <!--botão para limpar carrinho-->
                 </a>
             </div>
         </div>
     </main>
-    <footer>
+    <footer> <!--footer-->
         <section class="footer">
             <div class="rodape">
-                <h1>Play_game</h1>
-                <img src="imagens/logo.png" alt="logo">
+                <h1>Play_game</h1> <!--nome-->
+                <img src="imagens/logo.png" alt="logo"> <!--logo-->
             </div>
             <h3>Pagamento:</h3>
-            <div class="pagamento">
+            <div class="pagamento"> <!--pagamentos-->
                 <img src="imagens/pix.png" alt="pix">
                 <img src="imagens/boleto.png" alt="boleto">
                 <img src="imagens/mastercard.png" alt="mastercard">
                 <img src="imagens/visa.png" alt="visa">
             </div>
         </section>
-        <div class="contato">
-            <a href="https://github.com/mourvan67532" target="_blank"><img src="imagens/github.png" alt="logo git hub" class="img_ctt"></a>
-            <a href="#"><img src="imagens/facebook.png" alt="logo facebook" class="img_ctt"></a>
-            <a href="#"><img src="imagens/instagram.png" alt="logo instagram" class="img_ctt"></a>
-            <a href="#"><img src="imagens/youtube.png" alt="logo youtube" class="img_ctt"></a>
+        <div class="contato"> <!--contatos-->
+            <a href="https://github.com/mourvan67532" target="_blank"><img src="imagens/github.png" alt="logo git hub" class="img_ctt"></a> <!--github-->
+            <a href="#"><img src="imagens/facebook.png" alt="logo facebook" class="img_ctt"></a> <!--facebook-->
+            <a href="#"><img src="imagens/instagram.png" alt="logo instagram" class="img_ctt"></a> <!--instagram-->
+            <a href="#"><img src="imagens/youtube.png" alt="logo youtube" class="img_ctt"></a> <!--youtube-->
         </div>
     </footer>
 </body>

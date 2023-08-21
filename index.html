@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Play_Game</title> <!--titulo-->
+    <link rel="stylesheet" href="style.css"> <!--CSS-->
+    <!--Fontes-->
     <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
-    <title>Play_Game</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
@@ -17,20 +19,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body class="grid_principal">
-    <header class="grid_h">
+    <header class="grid_h"> <!--header-->
         <div class="menu_mobile">
-            <input type="checkbox" id="check_mob">
+            <input type="checkbox" id="check_mob"> <!--checkbox para menu retratil-->
             <label for="check_mob">
                 <img src="imagens/menu.png" alt="menu mobile">
             </label>
-            <nav class="mobile">
+            <nav class="mobile"> <!--menu retratil-->
                 <div class="mob_cadastro">
-                        <label for="check_mob">
-                            <img src="imagens/seta_esquerda.png" alt="menu mobile">
-                        </label>
-                    <a href="cadastro.html" class="avatarmob_a"><img src="imagens/avatar.png" alt="avatar" class="avatar_mob"></a>
-                    <a href="cadastro.html"><h2>Cadastre-se</h2></a>   
+                    <label for="check_mob">
+                        <img src="imagens/seta_esquerda.png" alt="menu mobile">
+                    </label>
+                    <a href="cadastro.html" class="avatarmob_a"><img src="imagens/avatar.png" alt="avatar"
+                            class="avatar_mob"></a>
+                    <a href="cadastro.html">
+                        <h2>Cadastre-se</h2>
+                    </a>
                 </div>
                 <div class="mob_cart">
                     <a href="carrinho.html">
@@ -40,18 +46,20 @@
             </nav>
         </div>
         <div class="play">
-                <a href="index.html"><img src="imagens/logo.png" alt="logo"></a>
-                <a href="index.html"><h1>Play_Game</h1></a>
+            <a href="index.html"><img src="imagens/logo.png" alt="logo"></a> <!--logo-->
+            <a href="index.html">
+                <h1>Play_Game</h1>
+            </a> <!--nome da pagina-->
         </div>
-        <div class="pesquisa">
+        <div class="pesquisa"> <!--barra de pesquisa-->
             <input type="text" id="pesquisa" placeholder="Buscar...">
-            <img src="imagens/lupa.png" alt="Lupa">
+            <img src="imagens/lupa.png" alt="Lupa"> <!--lupa-->
         </div>
         <nav>
             <div class="usuario">
                 <a href="#">
-                    <img src="imagens/lupa.png" alt="lupa" class="lupa_responsivo">
-                </a> 
+                    <img src="imagens/lupa.png" alt="lupa" class="lupa_responsivo"> <!--lupa para responsividade-->
+                </a>
                 <a href="carrinho.html">
                     <img src="imagens/carrinho.png" alt="carrinho" class="carrinho">
                 </a>
@@ -61,31 +69,53 @@
                 </a>
             </div>
         </nav>
-        <div class="pesquisa_mob">
-                <input type="text" id="pesquisa" placeholder="Buscar...">
-                <img src="imagens/lupa.png" alt="Lupa">
-            </div>
+        <div class="pesquisa_mob"> <!--barra de pesquisa para diferente tamanho de tela-->
+            <input type="text" id="pesquisa" placeholder="Buscar...">
+            <img src="imagens/lupa.png" alt="Lupa">
+        </div>
         </div>
     </header>
-    <aside class="grid_a">
+    <aside class="grid_a"> <!--aside-->
         <div class="lado">
-            <h1>Categorias:</h1>
-            <a href="#"><h2>Ação</h2></a>
-            <a href="#"><h2>Aventura</h2></a>
-            <a href="#"><h2>RPG</h2></a>
-            <a href="#"><h2>Simulação</h2></a>
-            <a href="#"><h2>Puzzle</h2></a>
-            <a href="#"><h2>Esporte</h2></a>
-            <a href="#"><h2>Terror</h2></a>
-            <a href="#"><h2>Sobrevivência</h2></a>
-            <a href="#"><h2>MOBA</h2></a>
-            <a href="#"><h2>Competitivo</h2></a>
-            <a href="#"><h2>Mundo Aberto</h2></a>
+            <h1>Categorias:</h1> <!--categorias-->
+            <a href="#">
+                <h2>Ação</h2>
+            </a>
+            <a href="#">
+                <h2>Aventura</h2>
+            </a>
+            <a href="#">
+                <h2>RPG</h2>
+            </a>
+            <a href="#">
+                <h2>Simulação</h2>
+            </a>
+            <a href="#">
+                <h2>Puzzle</h2>
+            </a>
+            <a href="#">
+                <h2>Esporte</h2>
+            </a>
+            <a href="#">
+                <h2>Terror</h2>
+            </a>
+            <a href="#">
+                <h2>Sobrevivência</h2>
+            </a>
+            <a href="#">
+                <h2>MOBA</h2>
+            </a>
+            <a href="#">
+                <h2>Competitivo</h2>
+            </a>
+            <a href="#">
+                <h2>Mundo Aberto</h2>
+            </a>
             <img src="imagens/controles.png" alt="controle">
         </div>
     </aside>
-    <main class="grid_m">
-        <div class="aside_mob">
+    <main class="grid_m"> <!--main-->
+        <div class="aside_mob"> <!--categorias para responsividade-->
             <select name="categoria_mob" id="categoria_mob">
                 <option selected disabled value="">Selecione</option>
                 <option>Ação</option>
@@ -102,102 +132,103 @@
             </select>
         </div>
         <div class="games">
+            <!-- imagens que mudam  -->
         </div>
-        <h2  class="destaque">Destaques:</h2>
-        <div class="produtos">
+        <h2 class="destaque">Destaques:</h2>
+        <div class="produtos"> <!--produtos-->
             <a href="spider.html">
                 <div class="itens">
-                    <img src="imagens/capa_spider.jpeg" alt="capa jogo spider man"> 
+                    <img src="imagens/capa_spider.jpeg" alt="capa jogo spider man"> <!--imagem do produto-->
                     <h4>Marvel's Spider Man Remastered</h4>
-                    <h2 class="preco">R$:160,97</h2>
+                    <h2 class="preco">R$:160,97</h2> <!--preço-->
                 </div>
             </a>
             <a href="god.html">
                 <div class="itens">
-                    <img src="imagens/gow_capa.png" alt="capa de God of War"> 
+                    <img src="imagens/gow_capa.png" alt="capa de God of War"> <!--imagem do produto-->
                     <h4>God of war</h4>
-                    <h2 class="preco">R$:119,90</h2>
+                    <h2 class="preco">R$:119,90</h2> <!--preço-->
                 </div>
             </a>
             <a href="#">
                 <div class="itens">
-                    <img src="imagens/the_last_us.jpeg" alt="capa the last of us"> 
+                    <img src="imagens/the_last_us.jpeg" alt="capa the last of us"> <!--imagem do produto-->
                     <h4>The last of us: Part I</h4>
-                    <h2 class="preco">R$:146,90</h2>
+                    <h2 class="preco">R$:146,90</h2> <!--preço-->
                 </div>
             </a>
             <a href="#">
                 <div class="itens">
-                    <img src="imagens/dying_light.jpeg" alt="capa dying light"> 
+                    <img src="imagens/dying_light.jpeg" alt="capa dying light"> <!--imagem do produto-->
                     <h4>Dying light: Enchanced Edition</h4>
-                    <h2 class="preco">R$:49,90</h2>
+                    <h2 class="preco">R$:49,90</h2> <!--preço-->
                 </div>
             </a>
             <a href="#">
                 <div class="itens">
-                    <img src="imagens/miles morales.jpeg" alt="capa spider man miles morales"> 
+                    <img src="imagens/miles morales.jpeg" alt="capa spider man miles morales"> <!--imagem do produto-->
                     <h4>Marvel's Spider Man Miles Mora...</h4>
-                    <h2 class="preco">R$:150,90</h2>
+                    <h2 class="preco">R$:150,90</h2> <!--preço-->
                 </div>
             </a>
             <a href="fifa.html">
                 <div class="itens">
-                    <img src="imagens/fifa 23.jpeg" alt="capa fifa 23"> 
+                    <img src="imagens/fifa 23.jpeg" alt="capa fifa 23"> <!--imagem do produto-->
                     <h4>EA SPORTS™ FIFA 23</h4>
-                    <h2 class="preco">R$:100,90</h2>
+                    <h2 class="preco">R$:100,90</h2> <!--preço-->
                 </div>
             </a>
             <a href="#">
                 <div class="itens">
-                    <img src="imagens/red_dead.jpeg" alt="capa red dead"> 
+                    <img src="imagens/red_dead.jpeg" alt="capa red dead"> <!--imagem do produto-->
                     <h4>Red Dead Redemption 2</h4>
-                    <h2 class="preco">R$:95,90</h2>
+                    <h2 class="preco">R$:95,90</h2> <!--preço-->
                 </div>
             </a>
             <a href="#">
                 <div class="itens">
-                    <img src="imagens/pubg.jpg" alt="capa PUBG"> 
+                    <img src="imagens/pubg.jpg" alt="capa PUBG"> <!--imagem do produto-->
                     <h4>PUBG Battlegrounds</h4>
-                    <h2 class="preco">Gratuito</h2>
+                    <h2 class="preco">Gratuito</h2> <!--preço-->
                 </div>
             </a>
             <a href="#">
                 <div class="itens">
-                    <img src="imagens/skyrim.jpeg" alt="capa skyrim"> 
+                    <img src="imagens/skyrim.jpeg" alt="capa skyrim"> <!--imagem do produto-->
                     <h4>The Elder Scrolls V: Skyrim SE</h4>
-                    <h2 class="preco">R$:35,90</h2>
+                    <h2 class="preco">R$:35,90</h2> <!--preço-->
                 </div>
             </a>
             <a href="#">
                 <div class="itens">
-                    <img src="imagens/gta5.jpeg" alt="capa gta5"> 
+                    <img src="imagens/gta5.jpeg" alt="capa gta5"> <!--imagem do produto-->
                     <h4>Grand Theft Auto V Premium...</h4>
-                    <h2 class="preco">R$:70,90</h2>
+                    <h2 class="preco">R$:70,90</h2> <!--preço-->
                 </div>
             </a>
             <a href="#">
                 <div class="itens">
-                    <img src="imagens/fallour_new.jpeg" alt="capa fallout new vegas"> 
+                    <img src="imagens/fallour_new.jpeg" alt="capa fallout new vegas"> <!--imagem do produto-->
                     <h4>Fallout New Vegas Ultimate Ed...</h4>
-                    <h2 class="preco">R$:45,90</h2>
+                    <h2 class="preco">R$:45,90</h2> <!--preço-->
                 </div>
             </a>
             <a href="#">
                 <div class="itens">
-                    <img src="imagens/death.jpg" alt="capa fallout new vegas"> 
+                    <img src="imagens/death.jpg" alt="capa death Stranding"> <!--imagem do produto-->
                     <h4>Death Stranding Director's Cut</h4>
-                    <h2 class="preco">R$:99,90</h2>
+                    <h2 class="preco">R$:99,90</h2> <!--preço-->
                 </div>
             </a>
         </div>
     </main>
-    <footer class="grid_f">
+    <footer class="grid_f"> <!--footer-->
         <section class="footer">
             <div class="rodape">
-                <h1>Play_game</h1>
-                <img src="imagens/logo.png" alt="logo">
+                <h1>Play_game</h1> 
+                <img src="imagens/logo.png" alt="logo"> <!--logo-->
             </div>
-            <h3>Pagamento:</h3>
+            <h3>Pagamento:</h3> <!--pagamentos-->
             <div class="pagamento">
                 <img src="imagens/pix.png" alt="pix">
                 <img src="imagens/boleto.png" alt="boleto">
@@ -206,10 +237,10 @@
             </div>
         </section>
         <div class="contato">
-            <a href="https://github.com/mourvan67532" target="_blank"><img src="imagens/github.png" alt="logo git hub" class="img_ctt"></a>
-            <a href="#"><img src="imagens/facebook.png" alt="logo facebook" class="img_ctt"></a>
-            <a href="#"><img src="imagens/instagram.png" alt="logo instagram" class="img_ctt"></a>
-            <a href="https://www.youtube.com" target="_blank"><img src="imagens/youtube.png" alt="logo youtube" class="img_ctt"></a>
+            <a href="https://github.com/mourvan67532" target="_blank"><img src="imagens/github.png" alt="logo git hub"class="img_ctt"></a> <!--github-->
+            <a href="#"><img src="imagens/facebook.png" alt="logo facebook" class="img_ctt"></a> <!--facebook-->
+            <a href="#"><img src="imagens/instagram.png" alt="logo instagram" class="img_ctt"></a> <!--instragam-->
+            <a href="https://www.youtube.com" target="_blank"><img src="imagens/youtube.png" alt="logo youtube" class="img_ctt"></a> <!--youtube-->
         </div>
     </footer>
 </body>

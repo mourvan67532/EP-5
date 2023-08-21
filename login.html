@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css"> <!--css-->
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon"> <!--logo-->
+    <title>Play_Game</title> <!--titulo-->
+    <!--fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
-    <title>Play_Game</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
@@ -18,85 +19,85 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 </head>
 <body  class="body_form">
-    <header class="grid_h">
+    <header class="grid_h"> <!--header-->
         <div class="menu_mobile">
-            <input type="checkbox" id="check_mob">
+            <input type="checkbox" id="check_mob"> <!--checkbox-->
             <label for="check_mob">
-                <img src="imagens/menu.png" alt="menu mobile">
+                <img src="imagens/menu.png" alt="menu mobile"> <!--imagem menu retratil-->
             </label>
             <nav class="mobile">
                 <div class="mob_cadastro">
                     <label for="check_mob">
-                        <img src="imagens/seta_esquerda.png" alt="menu mobile">
+                        <img src="imagens/seta_esquerda.png" alt="menu mobile"> <!--imagem fechar menu retratil-->
                     </label>
-                    <a href="cadastro.html" class="avatarmob_a"><img src="imagens/avatar.png" alt="avatar" class="avatar_mob"></a>
-                    <a href="cadastro.html"><h2>Cadastre-se</h2></a>   
+                    <a href="cadastro.html" class="avatarmob_a"><img src="imagens/avatar.png" alt="avatar" class="avatar_mob"></a> <!--cadatro-->
+                    <a href="cadastro.html"><h2>Cadastre-se</h2></a> <!--cadastro-->
                 </div>
                 <div class="mob_cart">
-                    <a href="carrinho.html">
+                    <a href="carrinho.html"> <!--carrinho-->
                         <img src="imagens/carrinho.png" alt="carrinho" class="carrinho_mob">
                     </a>
                 </div>
             </nav>
         </div>
         <div class="play">
-                <a href="index.html"><img src="imagens/logo.png" alt="logo"></a>
-                <a href="index.html"><h1>Play_Game</h1></a>
+                <a href="index.html"><img src="imagens/logo.png" alt="logo"></a> <!--logo-->
+                <a href="index.html"><h1>Play_Game</h1></a> <!--nome da pagina-->
         </div>
         <nav>
             <div class="usuario"> 
-                <a href="carrinho.html">
+                <a href="carrinho.html"> <!--carrinho-->
                     <img src="imagens/carrinho.png" alt="carrinho" class="carrinho">
                 </a>
-                <a href="cadastro.html" class="avatar_a">
+                <a href="cadastro.html" class="avatar_a"> <!--cadastro-->
                     <img src="imagens/avatar.png" alt="avatar" class="avatar">
                     <h2>Cadastre-se</h2>
                 </a>
             </div>
         </nav>
     </header>
-    <main class="main_form">
+    <main class="main_form"> <!--main-->
         <section class="login">
-            <img src="imagens/logo.png" alt="logo">
+            <img src="imagens/logo.png" alt="logo"> <!--logo-->
             <h1>Entrar</h1>
-            <form action="#" method="post">
-                <div class="bloco_form">
+            <form action="#" method="post"> <!--formulario-->
+                <div class="bloco_form">  <!--input e label para cada formulario-->
                     <label for="nome">Nome de Usúario</label>
-                    <input type="text" name="nome de usuario" id="senha" placeholder="Digite seu nome de usúario" required>                    
+                    <input type="text" name="nome de usuario" id="nome" placeholder="Digite seu nome de usúario" required> <!--nome de -->
                 </div>
-                <div class="bloco_form">
-                    <label for="nome">Senha</label>
-                    <input type="password" name="nome" id="senha" placeholder="Digite sua senha" required>
+                <div class="bloco_form">  <!--input e label para cada formulario-->
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required> <!--senha-->
                 </div>
                 <br>
-                <div class="botao_login">
+                <div class="botao_login"> <!--botão enviar formulario-->
                     <button type="submit"><h2>Entrar</h2></button>
                 </div>
                 <div class="login_cadastro">
-                    <a href="cadastro.html"><h5>Não possui uma conta? Cadastre-se</h5></a>
+                    <a href="cadastro.html"><h5>Não possui uma conta? Cadastre-se</h5></a> <!--ir para pagina de cadastro-->
                 </div>
             </form>
         </section>
     </main>
-    <footer>
+    <footer> <!--footer-->
         <section class="footer">
             <div class="rodape">
-                <h1>Play_game</h1>
-                <img src="imagens/logo.png" alt="logo">
+                <h1>Play_game</h1> <!--nome-->
+                <img src="imagens/logo.png" alt="logo"> <!--logo-->
             </div>
             <h3>Pagamento:</h3>
-            <div class="pagamento">
+            <div class="pagamento"> <!--pagamentos-->
                 <img src="imagens/pix.png" alt="pix">
                 <img src="imagens/boleto.png" alt="boleto">
                 <img src="imagens/mastercard.png" alt="mastercard">
                 <img src="imagens/visa.png" alt="visa">
             </div>
         </section>
-        <div class="contato">
-            <a href="https://github.com/mourvan67532" target="_blank"><img src="imagens/github.png" alt="logo git hub" class="img_ctt"></a>
-            <a href="#"><img src="imagens/facebook.png" alt="logo facebook" class="img_ctt"></a>
-            <a href="#"><img src="imagens/instagram.png" alt="logo instagram" class="img_ctt"></a>
-            <a href="#"><img src="imagens/youtube.png" alt="logo youtube" class="img_ctt"></a>
+        <div class="contato"> <!--contatos-->
+            <a href="https://github.com/mourvan67532" target="_blank"><img src="imagens/github.png" alt="logo git hub" class="img_ctt"></a> <!--github-->
+            <a href="#"><img src="imagens/facebook.png" alt="logo facebook" class="img_ctt"></a> <!--facebook-->
+            <a href="#"><img src="imagens/instagram.png" alt="logo instagram" class="img_ctt"></a> <!--instagram-->
+            <a href="#"><img src="imagens/youtube.png" alt="logo youtube" class="img_ctt"></a> <!--youtube-->
         </div>
     </footer>
 </body>
